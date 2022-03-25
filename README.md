@@ -103,6 +103,21 @@ For students, professors and all members of the FEUP community, who usually eat 
     **Normal Flow** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)** Clicks the button to see the menu/ chooses a filter for the various options in the menu.
 
     **Alternative Flows and Exceptions** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)**  The menu is not available.
+    
+&nbsp;
+
+- ### Rating the restaurant and dishes
+    **Actor** - Student;
+
+    **Description** - Allows students to rate where they are eating and the dish they have chosen.
+
+    **Preconditions** - The restaurants are in the app; Each restaurant shows the dishes to be evaluated, as well as the place itself. 
+
+    **Postconditions** - The student analyzes which restaurants and dishes have the best ratings.
+
+    **Normal Flow** - **(1)** The student accesses the list of restaurants and the dishes they serve; **(2)** Analyze which ones have the best rating; **(3)** At the end of your meal, rate the chosen restaurant and dish.
+
+    **Alternative Flows and Exceptions** - **(1)** The student accesses the list of restaurants and the dishes they serve; **(2)** The restaurants and dishes you wanted to know about the review are not rated.
 
 &nbsp; 
 
