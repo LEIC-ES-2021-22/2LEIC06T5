@@ -45,18 +45,19 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 &nbsp; 
 
-- ### Show the menu for each day of the week
+- ### Show menus for each day of the week
     **Actor** - Student;
 
     **Description** - The students can plan where and which plate they want to eat for each day of the week in advance;
 
-    **Preconditions** - The student wants to see informations about the menus available in different places regarding a day of the week;
+    **Preconditions** - The student wants to see informations about a menu available in different places regarding a day of the week;
 
-    **Postconditions** - **(1)** The student chooses to see information for a specific day of the week; **(2)** The student chooses the menu they want to eat; **(3)** Information is shown.
+    **Postconditions** - **(1)** The student sees information about the menu in that week.
 
-    **Normal Flow** - **(1)** The system shows the list with each day of the week; **(2)** The student selects the day that they need to see the information for; **(3)** The system shows the menu options; **(4)** The user selects a menu; **(5)** The system shows the places and the plates for each place.
+    **Normal Flow** - **(1)** The user selects a menu; **(2)** The system shows the places and the plates for each place in that week.
 
-    **Alternative Flows and Exceptions** - The student can go back if they select the wrong menu by mistake.
+    **Alternative Flows and Exceptions** - **(1)** The student can go back if they select the wrong menu by mistake. **(2)** The system shows the places and the plates for each place in that week.
+    **Another Alternative Flow** - **(1)** If the menu is not available in the app a message will be shown to advice the user.
 
 &nbsp;
 
@@ -76,14 +77,14 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 &nbsp;
 
-- ### Hours when the uni restaurants are open
+- ### Filter the uni restaurants open at the time the app is being used.
     **Actor** - Student;
 
-    **Description** - Allows the student to see which restaurants are open in campus.
+    **Description** - Allows the student to see which restaurants are open in the campus, according to the clock on it's phone.
 
-    **Preconditions** - The student wants to know which restaurants are open, according to the clock on it's phone.
+    **Preconditions** - **(1)** The student wants to know which restaurants are opened at that time. **(2)** The app needs to have acess to the phone hours. **(3)** The system needs to have acess to the restaurant's opening time.
 
-    **Postconditions** - The student chooses to check which restaurants are open; The student opens the app; Only restaurants that are open are shown.
+    **Postconditions** - **(1)** The student chooses to check which restaurants are open; **(2)** The student opens the app; **(3)** Only restaurants that are open are shown.
 
     **Normal Flow** - The student opens the app, the restaurants that are open are shown.
 
@@ -100,7 +101,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 
     **Postconditions** - The student gets the menu of the restaurant.
 
-    **Normal Flow** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)** Clicks the button to see the menu/ chooses a filter for the various options in the menu.
+    **Normal Flow** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)** Clicks the button to see the menu/chooses a filter for the various options in the menu.
 
     **Alternative Flows and Exceptions** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)**  The menu is not available.
     
