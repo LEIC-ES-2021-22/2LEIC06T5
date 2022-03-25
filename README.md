@@ -24,19 +24,19 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 
 ## Main Features
- -  Show the menu for each day of the week 
- -  Restaurant directions 
- -  Filter the dishes - The user may filter the dishes  according to what they want to eat
+ -  Show menus for each day of the week for each restaurant 
+ -  Restaurant directions
+ -  Filter the dishes - The user may filter the dishes according to what they want to eat
  -  Rating the restaurant and dishes
- -  Option to only see the open restaurants according to the phone hour
+ -  Option to only show the open restaurants according to the phone hour
 
 &nbsp; 
 
 
 ## Requirements
-- Sigarra's Menu
-- Prices
-- Restaurants/ Canteens localizations
+- Sigarra's Menu information
+- Prices label
+- Restaurants / Canteens locations
 
 
 &nbsp; 
@@ -47,9 +47,6 @@ So far, contributions are exclusively made by the initial team, but we hope to o
 Please contact us!
 
 Thank you!
-
-
-
 
 
 
