@@ -41,6 +41,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 ## Requirements
 - ### Use case model
+![use_case_model](https://user-images.githubusercontent.com/72468538/160213728-55cf0e87-5cd4-47c5-a410-c250867d0d07.png)
 
 &nbsp; 
 
