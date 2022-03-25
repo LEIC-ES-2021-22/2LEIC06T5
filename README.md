@@ -24,10 +24,10 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 
 ## Main Features
- -  Menu for each day of the week 
+ -  Show the menu for each day of the week 
  -  Restaurant directions 
  -  Filter the dishes - The user may filter the dishes  according to what they want to eat
- -  Dish reservation  
+ -  Rating the restaurant
  -  Option to only see the open restaurants according to the phone hour
 
 &nbsp; 
