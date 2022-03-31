@@ -52,12 +52,12 @@ For students, professors and all members of the FEUP community, who usually eat 
 
     **Preconditions** - The student wants to see informations about a menu available in different places regarding a day of the week;
 
-    **Postconditions** - **(1)** The student sees information about the menu in that week.
+    **Postconditions** - The student sees information about the menu in that week.
 
     **Normal Flow** - **(1)** The user selects a menu; **(2)** The system shows the places and the plates for each place in that week.
 
     **Alternative Flows and Exceptions** - **(1)** The student can go back if they select the wrong menu by mistake. **(2)** The system shows the places and the plates for each place in that week.
-    **Another Alternative Flow** - **(1)** If the menu is not available in the app a message will be shown to advice the user.
+    **Another Alternative Flow** - If the menu is not available in the app a message will be shown to advice the user.
 
 &nbsp;
 
