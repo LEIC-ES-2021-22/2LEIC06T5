@@ -137,7 +137,7 @@ Thank you!
 ### Members
 
 * **André Miguel Pacheco Morais** - [Andrekt02](https://github.com/Andrekt02)
-* ** André Medina Pereira** - [anetep](https://github.com/anetep)
+* **André Medina Pereira** - [anetep](https://github.com/anetep)
 * **Maria Carlota Gomes Ribeiro Matos Leite** - [carlotaleite](https://github.com/carlotaleite)
 * **Maria Eduarda Pacheco Mendes Araújo** - [Eduarda34](https://github.com/Eduarda34)
 * **Miguel Bravo de Almeida e Silva Figueiredo** - [grindfever](https://github.com/grindfever)
