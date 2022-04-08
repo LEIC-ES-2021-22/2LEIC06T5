@@ -11,7 +11,7 @@
 
 
 - ### Vision Stament
-For any student who likes to eat near Feup, UniMeals is the best app that helps you find the best places to eat and that shows you the best options of dishes and menus for the best price, comparing all options available for you and showing you reliable ratings for each place. Also, unlike sigarra's menu website UniMeals offers an interactive interface with filters costumization and localizations to all the places available
+For any student who likes to eat near Feup, UniMeals is the best app to help you find the top places to have a meal, showing you the best options of dishes and menus for the cheapest prices, comparing all options available for you and even showing you reliable ratings for each place. Also, unlike sigarra's website UniMeals offers an easy to use, friendly interactive interface with filters customization and directions to the locations of all the places available. Our product, aims to organize all the information in one place symplifing access to every information needed by the students.
 
 
 &nbsp; 
