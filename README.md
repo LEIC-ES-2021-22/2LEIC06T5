@@ -11,7 +11,8 @@
 
 
 - ### Vision Stament
-The best and fastest way for you to have access to all the restaurants and dishes information close to your university campus.
+For every student who usually likes or needs to eat outside of their house, UniMeals is a mobile application that aims to simplify the access to all the restaurants and dishes information close to the FEUP campus. Unlike Sigarra's menu, UniMeals offers a more interative and easy-yo-use interface that will facilitate the access to all the information you may need.
+
 
 &nbsp; 
 
