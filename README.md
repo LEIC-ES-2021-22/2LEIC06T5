@@ -5,19 +5,30 @@
 
 
  ## Business modeling
+* Business modeling 
+  * [Product Vision](#product-vision)
+  * [Elevator Pitch](#elevator-pitch)
+* Requirements
+  * [Use Case Diagram](#use-case-diagram)
+  * [Domain model](#domain-model)
+* Architecture and Design
+  * [Logical architecture](#logical-architecture)
+  * [Physical architecture](#physical-architecture)
+
+
 
 &nbsp; 
 
 
 
-- ### Vision Stament
+## Product Vision
 For any student who likes to eat near Feup, UniMeals is the best app to help you find the top places to have a meal, showing you the best options of dishes and menus for the cheapest prices, comparing all options available for you and even showing you reliable ratings for each place. Also, unlike sigarra's website UniMeals offers an easy to use, friendly interactive interface with filters customization and directions to the locations of all the places available. Our product, aims to organize all the information in one place symplifing access to every information needed by the students.
 
 
 &nbsp; 
 
 
-- ### Elevator pitch
+## Elevator Pitch
 For students, professors and all members of the FEUP community, who usually eat out at least once a week and prefer a place close to the university, Uni Meals is the best option for you to have access to the weekly menus of all the restaurants/canteens belonging to your campus. There, you will be able to consult all the places where you can eat, the types of dishes available including fish, meat, vegetarian and diet, the menu for each day of the week and the total price of each dishes according to your choice.
  It has interactive interface that will make it easier for you to access all the information and compare each place and each dish to choose the best option for your budget. 
 
@@ -41,7 +52,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 &nbsp;
 
 ## Requirements
-- ### Use case model
+- ### Use case diagram
 ![](images\useCaseModel.png)
 
 &nbsp; 
@@ -123,19 +134,19 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 &nbsp; 
 
-- ### Domain Model
+## Domain Model
 
 ![](images\domainModel.png)
 
 
-### Architecture and Design
+## Architecture and Design
 
-- ### Logical architecture
+### Logical architecture
 
 ![](images\logicalArquitecture.png)
 
 
-- ### Physical architecture
+### Physical architecture
 ![](images\physicalArquitecture.png)
 
 
