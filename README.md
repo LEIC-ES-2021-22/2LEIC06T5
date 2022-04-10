@@ -42,7 +42,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 ## Requirements
 - ### Use case model
-![use_case_model](https://user-images.githubusercontent.com/72468538/160213728-55cf0e87-5cd4-47c5-a410-c250867d0d07.png)
+![](images\useCaseModel.png)
 
 &nbsp; 
 
@@ -125,17 +125,18 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 - ### Domain Model
 
-![image](https://user-images.githubusercontent.com/72468538/161427831-e3b31553-62b2-4d1a-aca2-2e96e1a8c29a.png)
+![](images\domainModel.png)
 
 
 ### Architecture and Design
 
 - ### Logical architecture
 
-![image](https://user-images.githubusercontent.com/72468538/162617413-7c87dd71-7429-42fc-af57-db577b690aae.png)
+![](images\logicalArquitecture.png)
+
 
 - ### Physical architecture
-
+![](images\physicalArquitecture.png)
 
 
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
