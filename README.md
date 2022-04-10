@@ -53,7 +53,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 ## Requirements
 - ### Use case diagram
-![](images\useCaseModel.png)
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/useCaseModel.png)
 
 &nbsp; 
 
@@ -136,14 +136,14 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 ## Domain Model
 
-![](images\domainModel.png)
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/domainModel.png)
 
 
 ## Architecture and Design
 
 ### Logical architecture
 
-![](images\logicalArquitecture.png)
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/logicalArquitecture.png)
 
 
 ### Physical architecture
