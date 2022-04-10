@@ -147,7 +147,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 
 ### Physical architecture
-![](images\physicalArquitecture.png)
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/physicalArquitecture.png)
 
 
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
