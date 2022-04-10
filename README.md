@@ -144,15 +144,23 @@ For students, professors and all members of the FEUP community, who usually eat 
 ### Logical architecture
 
 ![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/logicalArquitecture.png)
+
 Our logical architecture will follow the Model-View-Controller architeture, since it is recommended to organize projects like this one that uses a GUI. This pattern separates presentation, interaction and the application data in three logical different parts that interact with each other.
 
 The first one is the Model which contains all the application data, such as informations about the restaurants, menus, prices and ratings.
 The View displays the information from the Model as an interface to the users and sends information from the user to the Controller.
 The Controller is responsible by the logic of the system and requests informations from the model and sends the necessary data to the view.
 
+&nbsp;
+
 ### Physical architecture
 ![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/physicalArquitecture.png)
 
+
+In our app's physical architecture 3 entities are featured: the FEUP server with the sigarra's database that contains almost all the information required by the app; the app itself, which the user interacts with; and the backend with the implementation of all features present in the app and all the information that can be accessed by the users. 
+Regarding technologies, we used Flutter (with the Dart programming language) for the frontend and we plan to use sqlite3 for the backend because it is the database management system that seems more appropriated and that we are most familiar with.
+
+&nbsp;
 
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
 
