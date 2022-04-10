@@ -127,6 +127,17 @@ For students, professors and all members of the FEUP community, who usually eat 
 
 ![image](https://user-images.githubusercontent.com/72468538/161427831-e3b31553-62b2-4d1a-aca2-2e96e1a8c29a.png)
 
+
+### Architecture and Design
+
+- ### Logical architecture
+
+![image](https://user-images.githubusercontent.com/72468538/162617413-7c87dd71-7429-42fc-af57-db577b690aae.png)
+
+- ### Physical architecture
+
+
+
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
 
 Please contact us!
