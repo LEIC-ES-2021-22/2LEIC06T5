@@ -144,7 +144,7 @@ For students, professors and all members of the FEUP community, who usually eat 
 ### Logical architecture
 
 ![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/logicalArquitecture.png)
-# Our logical architecture will follow the Model-View-Controller architeture, since it is recommended to organize projects like this one that uses a GUI. This pattern separates presentation, interaction and the application data in three logical different parts that interact with each other.
+Our logical architecture will follow the Model-View-Controller architeture, since it is recommended to organize projects like this one that uses a GUI. This pattern separates presentation, interaction and the application data in three logical different parts that interact with each other.
 
 The first one is the Model which contains all the application data, such as informations about the restaurants, menus, prices and ratings.
 The View displays the information from the Model as an interface to the users and sends information from the user to the Controller.
