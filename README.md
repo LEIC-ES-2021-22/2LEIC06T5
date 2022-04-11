@@ -2,8 +2,6 @@
 
 # Uni Meals Development Report
 
-&nbsp; 
-
 * Business modeling 
   * [Product Vision](#product-vision)
   * [Elevator Pitch](#elevator-pitch)
@@ -15,6 +13,8 @@
   * [Physical architecture](#physical-architecture)
 
  ## Business modeling
+
+&nbsp; 
 
 ## Product Vision
 For any student who likes to eat near Feup, UniMeals is the best app to help you find the top places to have a meal, showing you the best options of dishes and menus for the cheapest prices, comparing all options available for you and even showing you reliable ratings for each place. Also, unlike sigarra's website UniMeals offers an easy to use, friendly interactive interface with filters customization and directions to the locations of all the places available. Our product, aims to organize all the information in one place symplifing access to every information needed by the students.
