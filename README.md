@@ -156,10 +156,10 @@ Thank you!
 
 ### Members
 
-| Name                                           | Git                                             |
-| ---                                            | ---                                             |
-| **André Miguel Pacheco Morais**                | [Andrekt02](https://github.com/Andrekt02)       |
-| **André Medina Pereira**                       | [anetep](https://github.com/anetep)             |
-| **Maria Carlota Gomes Ribeiro Matos Leite**    | [carlotaleite](https://github.com/carlotaleite) |
-| **Maria Eduarda Pacheco Mendes Araújo**        | [Eduarda34](https://github.com/Eduarda34)       |
-| **Miguel Bravo de Almeida e Silva Figueiredo** | [grindfever](https://github.com/grindfever)     |
+| Name                                           | Number      | Git                                             |
+| ---                                            | ---         | ---                                             |
+| **André Miguel Pacheco Morais**                |  202005303  | [Andrekt02](https://github.com/Andrekt02)       |
+| **Anete Medina Pereira**                       |  202008856  | [anetep](https://github.com/anetep)             |
+| **Maria Carlota Gomes Ribeiro Matos Leite**    |  202005428  | [carlotaleite](https://github.com/carlotaleite) |
+| **Maria Eduarda Pacheco Mendes Araújo**        |  202004473  | [Eduarda34](https://github.com/Eduarda34)       |
+| **Miguel Bravo de Almeida e Silva Figueiredo** |  201706105  | [grindfever](https://github.com/grindfever)     |
