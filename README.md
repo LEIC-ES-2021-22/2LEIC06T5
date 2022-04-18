@@ -47,85 +47,74 @@ For students, professors and all members of the FEUP community, who usually eat 
 &nbsp;
 
 ## Requirements
-- ### Use case diagram
+### Use case diagram
 ![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/useCaseDiagram.png)
 
 &nbsp; 
 
-- ### Show menus for each day of the week
-    **Actor** - Student;
-
-    **Description** - The students can plan where and which plate they want to eat for each day of the week in advance;
-
-    **Preconditions** - The student wants to see informations about a menu available in different places regarding a day of the week;
-
-    **Postconditions** - The student sees information about the menu in that week.
-
-    **Normal Flow** - **(1)** The user selects a menu; **(2)** The system shows the places and the plates for each place in that week.
-
-    **Alternative Flows and Exceptions** - **(1)** The student can go back if they select the wrong menu by mistake. **(2)** The system shows the places and the plates for each place in that week.
-    **Another Alternative Flow** - If the menu is not available in the app a message will be shown to advice the user.
+- ### See menus for each day of the week
+  |||
+  | --- | --- |
+  | *Name* | See menus for each day of the week |
+  | *Actor* |  Student | 
+  | *Description* | The student can plan where and which plate he wants to eat for each day of the week in advance. |
+  | *Preconditions* | - The student is authenticated in the app. <br> - The restaurant has it's menus available.|
+  | *Postconditions* | - The student sees information about the menu in that week. |
+  | *Normal flow* | 1. The student access the app.<br> 2. The system shows the list of restaurants available in the app.<br> 3. The student chooses a restaurant.<br> 4. The student chooses the "see menus" option on the restaurant page.<br> 5. The system shows menu for each day of the week in that restaurant. |
+  | *Alternative flows and exceptions* | 1. In step 2, the student can go to the navbar and choose to see menu of the week for all restaurants.|
 
 &nbsp;
 
-- ### See restaurant directions
-    **Actor** - Student;
-
-    **Description** - Allows the student to obtain the direction to any of the restaurants 
-    that are available in the app and see how much time it takes for them to get there on feet.
-
-    **Preconditions** - The restaurant is in the app. The restaurant has its localization available. If the student wants to know how much time does it take to get there on feet, the GPS must be turned on.
-
-    **Postconditions** - The student gets the exact localization of the restaurant. The system estimates the time it that takes the student to get to the restaurant.
-
-    **Normal Flow** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)** Click in button to see direction / click button to estimate the time it takes to get there on feet.
-
-    **Alternative Flows and Exceptions** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)** Click button to estimate the time it takes to get there on feet; **(4)** Error, the GPS is not turned on.
+- ### See restaurant location
+  |||
+  | --- | --- |
+  | *Name* | See restaurant location |
+  | *Actor* |  Student | 
+  | *Description* | Allows the student to obtain the location of any restaurants available in the app and see how much time it takes for them to get there. |
+  | *Preconditions* | - The restaurant is in the app. <br> - The restaurant has its location available. <br> - If the student wants to know how much time does it take to get there on feet, the GPS must be turned on.|
+  | *Postconditions* | - The student gets the exact location of the restaurant. <br> - The system estimates the time it that takes the student to get to the restaurant.|
+  | *Normal flow* | 1. The student accesses the list of restaurants <br> 2. The student chooses a restaurant.<br> 3. In the restaurant page, the student click on the button to see restaurant location.|
+  | *Alternative flows and exceptions* | 1. In step 3, the student click on button to estimate time it takes to get there on feet.|
 
 &nbsp;
 
 - ### Filter the uni restaurants open at the time the app is being used.
-    **Actor** - Student;
 
-    **Description** - Allows the student to see which restaurants are open in the campus, according to the clock on it's phone.
-
-    **Preconditions** - **(1)** The student wants to know which restaurants are opened at that time. **(2)** The app needs to have acess to the phone hours. **(3)** The system needs to have acess to the restaurant's opening time.
-
-    **Postconditions** - **(1)** The student chooses to check which restaurants are open; **(2)** The student opens the app; **(3)** Only restaurants that are open are shown.
-
-    **Normal Flow** - The student opens the app, the restaurants that are open are shown.
-
-    **Alternative Flows and Exceptions** - The student might want to use a toggle button shown on the menu, that shows all restaurants instead of only the open ones.
+  |||
+  | --- | --- |
+  | *Name* | Filter the uni restaurants open at the time the app is being used. |
+  | *Actor* |  Student | 
+  | *Description* | Allows the student to see which restaurants are open in the campus, according to the clock on it's phone. |
+  | *Preconditions* | - The system has access to the phone current time. <br> - The system has access to the restaurant's opening time.|
+  | *Postconditions* | - Only restaurants that are open are shown in the main page. <br> - No restaurants are shown on the main page if none of them is open at that time.|
+  | *Normal flow* | 1. The student accesses the main page<br> 2. The student opens the navbar.<br> 3. In the navbar, the student chooses the option "Filtros". <br> 4. In the filters page, the student chooses to see only open restaurants at the time.|
+  | *Alternative flows and exceptions* | 1. In step 4, the student can disable this option by turning of the switch for this option.|
 
 &nbsp;
 
 - ### Filter the dishes
-    **Actor** - Student;
-
-    **Description** - Allows the student to filter the dishes according to what they want to eat.
-
-    **Preconditions** - The restaurant is in the app; The restaurant has its menu available. 
-
-    **Postconditions** - The student gets the menu of the restaurant.
-
-    **Normal Flow** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)** Clicks the button to see the menu/chooses a filter for the various options in the menu.
-
-    **Alternative Flows and Exceptions** - **(1)** The student accesses the list of restaurants; **(2)** Chooses a restaurant; **(3)**  The menu is not available.
+  |||
+  | --- | --- |
+  | *Name* | Filter the dishes. |
+  | *Actor* |  Student | 
+  | *Description* | Allows the student to filter the dishes according to what they want to eat. |
+  | *Preconditions* | - The restaurant has its menu available. <br> - The type of dish that the student wants to eat is part of the menu of the restaurant.|
+  | *Postconditions* | - The student gets the menu of the restaurant with the dishes filtered according to what they chose.|
+  | *Normal flow* | 1. The student accesses the main page<br> 2. The student opens the navbar.<br> 3. In the navbar, the student chooses the option "Filtros". <br> 4. In the filters page, the student chooses what kind of dish he wants to be shown in the menus.|
+  | *Alternative flows and exceptions* | 1. In step 4, the student choses a option that is not available in certain restaurants. <br> 5. The type of dish that the student chose is only shown in the restaurants that have this dish. |
     
 &nbsp;
 
-- ### Rating the restaurant and dishes
-    **Actor** - Student;
-
-    **Description** - Allows students to rate where they are eating and the dish they have chosen.
-
-    **Preconditions** - The restaurants are in the app; Each restaurant shows the dishes to be evaluated, as well as the place itself. 
-
-    **Postconditions** - The student analyzes which restaurants and dishes have the best ratings.
-
-    **Normal Flow** - **(1)** The student accesses the list of restaurants and the dishes they serve; **(2)** Analyze which ones have the best rating; **(3)** At the end of your meal, rate the chosen restaurant and dish.
-
-    **Alternative Flows and Exceptions** - **(1)** The student accesses the list of restaurants and the dishes they serve; **(2)** The restaurants and dishes you wanted to know about the review are not rated.
+- ### Give rating to restaurants and dishes
+  |||
+  | --- | --- |
+  | *Name* | Give rating to restaurants and dishes |
+  | *Actor* |  Student | 
+  | *Description* | Allows the student to give rating to a restaurant or a dish. |
+  | *Preconditions* | - The option to give rating to a restaurant or a dish is available in the app.|
+  | *Postconditions* | - The student rates the restaurant choosing the *like* or *dislike* button.|
+  | *Normal flow* | 1. The student accesses the main page<br> 2. The student chooses a restaurant.<br> 3. In the restaurant page, the student clicks the *like* or *dislike* to give a positive or a negative rating to the restaurant. |
+  | *Alternative flows and exceptions* | 1. In step 3, the student chooses the "see menus" option in the restaurant page. <br> 2. The student chooses a dish. <br> 3. In the chosen dish section, the student click the *like* or *dislike* to give a positive or a negative rating to the dish. |
 
 &nbsp; 
 
