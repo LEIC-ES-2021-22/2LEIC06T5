@@ -138,7 +138,7 @@ The Controller is responsible by the logic of the system and requests informatio
 &nbsp;
 
 ### Physical architecture
-![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/physicalArquitecture2.png)
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/physicalArquitecture.png)
 
 
 In our app's physical architecture 3 entities are featured: the FEUP server with the sigarra's database that contains almost all the information required by the app; the app itself, which the user interacts with; and the backend with the implementation of all features present in the app and all the information that can be accessed by the users. 
