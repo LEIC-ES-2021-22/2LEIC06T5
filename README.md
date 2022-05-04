@@ -138,7 +138,7 @@ The Controller is responsible by the logic of the system and requests informatio
 &nbsp;
 
 ### Physical architecture
-![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/physicalArquitecture2.png)
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/physicalArquitecture.png)
 
 
 In our app's physical architecture 3 entities are featured: the FEUP server with the sigarra's database that contains almost all the information required by the app; the app itself, which the user interacts with; and the backend with the implementation of all features present in the app and all the information that can be accessed by the users. 
@@ -156,10 +156,10 @@ Thank you!
 
 ### Members
 
-| Name                                           | Git                                             |
-| ---                                            | ---                                             |
-| **André Miguel Pacheco Morais**                | [Andrekt02](https://github.com/Andrekt02)       |
-| **André Medina Pereira**                       | [anetep](https://github.com/anetep)             |
-| **Maria Carlota Gomes Ribeiro Matos Leite**    | [carlotaleite](https://github.com/carlotaleite) |
-| **Maria Eduarda Pacheco Mendes Araújo**        | [Eduarda34](https://github.com/Eduarda34)       |
-| **Miguel Bravo de Almeida e Silva Figueiredo** | [grindfever](https://github.com/grindfever)     |
+| Name                                           | Number      | Git                                             |
+| ---                                            | ---         | ---                                             |
+| **André Miguel Pacheco Morais**                |  202005303  | [Andrekt02](https://github.com/Andrekt02)       |
+| **Anete Medina Pereira**                       |  202008856  | [anetep](https://github.com/anetep)             |
+| **Maria Carlota Gomes Ribeiro Matos Leite**    |  202005428  | [carlotaleite](https://github.com/carlotaleite) |
+| **Maria Eduarda Pacheco Mendes Araújo**        |  202004473  | [Eduarda34](https://github.com/Eduarda34)       |
+| **Miguel Bravo de Almeida e Silva Figueiredo** |  201706105  | [grindfever](https://github.com/grindfever)     |
