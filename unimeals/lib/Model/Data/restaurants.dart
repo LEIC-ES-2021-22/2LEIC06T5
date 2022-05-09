@@ -8,6 +8,18 @@ class Restaurant {
     this.id = id;
     this.name = name;
   }
+
+  /*
+  class Restaurant {
+  int id = 0;
+  String name = "";
+
+  Restaurant(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
+}
+   */
 }
 
 Restaurant res0 = Restaurant(0,'Cantina FEUP');

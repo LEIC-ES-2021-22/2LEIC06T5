@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,10 +11,9 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: Image(
-          image: AssetImage('Model/Images/cantina_feup.png'),
+          image: AssetImage('lib/model/images/cantina_feup.jpeg', package: 'unimeals'),
         )
       ),
-
     );
   }
 }
