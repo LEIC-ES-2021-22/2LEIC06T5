@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:unimeals/model/data/restaurants.dart';
+
+List<String> listImages = [
+  "assets/cafetaria_restaurante.jpeg",
+  "assets/cantina_feup.jpeg",
+  "assets/grill_feup.jpeg",
+  "inegi.jpeg"
+];
 
 class HomePage extends StatelessWidget {
   @override
@@ -11,7 +19,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Image(
-          image: AssetImage('lib/model/images/cantina_feup.jpeg', package: 'unimeals'),
+          image: AssetImage('assets/cantina_feup.jpeg'), width: 300, height: 300,
         )
       ),
     );
