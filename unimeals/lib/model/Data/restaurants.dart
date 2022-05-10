@@ -7,7 +7,7 @@ class Restaurant {
   String name;
   String imgUrl;
   String location;
-  num rating;
+  String rating;   // Depois passar rating para num
   Map <String, List<Dish>> menu;
 
   Restaurant(this.name,
@@ -16,24 +16,35 @@ class Restaurant {
       this.rating,
       this.menu);
 
-  static List<Restaurant> generateRestaurant(){
+  static Restaurant generateRestaurant(){
+    return Restaurant('Grill',
+          'assets/images/grill_feup.jpeg',
+          'Algures Feup',
+          '20%',
+          {
+            'Menu': Dish.generateDishesGrill()
+          });
+  }
+
+  /*static List<Restaurant> generateRestaurant(){
     return [
       Restaurant('Grill',
           'assets/images/grill_feup.jpeg',
           'Algures Feup',
-          20,
+          '80%',
           {
             'Menu': Dish.generateDishesGrill()
           }),
       Restaurant('Grill',
           'assets/images/grill_feup.jpeg',
           'Algures Feup',
-          20,
+          '20%',
           {
             'Menu': Dish.generateDishesCantina()
           }),
     ];
-  }
+  }*/
+
   }
 
 
