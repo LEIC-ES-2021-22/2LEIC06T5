@@ -23,7 +23,10 @@ class restaurantPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.network(
+              Row(
+
+              ),
+              Image.asset(
                 restaurant.imageUrl,
                 height: 500,
               ),

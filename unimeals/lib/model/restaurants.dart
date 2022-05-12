@@ -20,37 +20,37 @@ class Restaurant {
 List<Restaurant> restaurantList = [
   Restaurant(
     name: 'Grill',
-    imageUrl: 'https://noticias.up.pt/wp-content/uploads/2015/04/Grill_630x330.jpg',
+    imageUrl: 'assets/images/grill_feup.jpeg',
     location: 'Algures Feup' ,
     rating: 94,
   ),
   Restaurant(
     name: 'Cafetaria - Restaurante Feup',
-    imageUrl: 'https://10619-2.s.cdn12.com/rests/original/801_76744147.jpg',
+    imageUrl: 'assets/images/cafetaria_restaurante.jpeg',
     location: 'Algures Feup',
     rating: 33,
   ),
   Restaurant(
     name: 'Restaurante do INEGI',
-    imageUrl: 'https://img.restaurantguru.com/r692-Restaurante-INEGI-meals.jpg',
+    imageUrl: 'assets/images/inegi.jpeg',
     location: 'Algures Feup' ,
     rating: 80,
   ),
   Restaurant(
     name: 'Cantina - Almoço',
-    imageUrl: 'https://sigarra.up.pt/sasup/en/imagens/SC-alimentacao-cantina-engenharia.jpg',
+    imageUrl: 'assets/images/cantina_feup.jpeg',
     location: 'Algures Feup' ,
     rating: 29,
   ),
   Restaurant(
     name: 'Cantina - Jantar',
-    imageUrl: 'https://sigarra.up.pt/sasup/en/imagens/SC-alimentacao-cantina-engenharia.jpg',
+    imageUrl: 'assets/images/cantina_feup.jpeg',
     location: 'Algures Feup' ,
     rating: 29,
   ),
   Restaurant(
     name: 'Bar INESC TEC',
-    imageUrl: 'https://sigarra.up.pt/feup/pt/WEB_GESSI_DOCS.download_file?p_name=F962267673/Grill.jpg',
+    imageUrl: 'assets/images/barBibliotecaExterior.jpg',
     location: 'Algures Feup' ,
     rating: 29,
   )
