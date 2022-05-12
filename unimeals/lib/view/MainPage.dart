@@ -1,9 +1,43 @@
 
 import 'package:flutter/material.dart';
-import 'package:unimeals/constants/colors.dart';
-import 'package:unimeals/widgets/restaurant_list.dart';
+import 'package:unimeals/model/restaurants.dart';
+import 'package:unimeals/view/restaurantPage.dart';
 
-import '../../widgets/custom_app_bar.dart';
+class RestaurantsListScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('UniMeals'),
+          backgroundColor: Color(0xFF8C2D19),
+          centerTitle: true,
+          shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
+        ),
+        body: ListView.builder(
+            itemCount: restaurantList.length,
+            itemBuilder: (context, index) {
+              Restaurant restaurant = restaurantList[index];
+              return Card(
+                child: ListTile(
+                  title: Text(restaurant.name),
+                  subtitle: Text(restaurant.rating.toString()),
+                  leading: Image.network(restaurant.imageUrl),
+                  trailing: Icon(Icons.arrow_forward_rounded),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => restaurantPage(restaurant)));
+                  },
+                ),
+              );
+            }));
+  }
+}
+
+
+/*
 
 class HomePage extends StatefulWidget {
   @override
@@ -29,7 +63,7 @@ class _HomePageState extends State<HomePage> {
     );
     return Container();
   }
-}
+}*/
 
 
 
