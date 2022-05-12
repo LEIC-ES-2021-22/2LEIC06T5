@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/restaurantPage.dart';
 
@@ -20,9 +21,34 @@ class RestaurantsListScreen extends StatelessWidget {
               Restaurant restaurant = restaurantList[index];
               return Card(
                 child: ListTile(
-                  title: Text(restaurant.name),
-                  subtitle: Text(restaurant.rating.toString()),
-                  leading: Image.network(restaurant.imageUrl),
+                  title:
+                  Container( //apply margin and padding using Container Widget.
+                    padding: EdgeInsets.all(5), //You can use EdgeInsets like above
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        color: mainRed,
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    child: Text(
+                      restaurant.name,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,  //
+                      ),
+                    ),
+                  ),
+                  subtitle: Row(
+                    children: [
+                       Icon(Icons.star,
+                          color: Colors.amber),
+                      Text(restaurant.rating.toString()),
+                    ],
+                  ),
+                  leading: Image.asset(
+                    restaurant.imageUrl,
+                    width: 80,
+                    height: 100),
                   trailing: Icon(Icons.arrow_forward_rounded),
                   onTap: () {
                     Navigator.push(
