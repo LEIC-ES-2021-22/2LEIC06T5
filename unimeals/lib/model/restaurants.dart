@@ -8,14 +8,41 @@ class Restaurant {
   String imgUrl;
   String location;
   String rating;   // Depois passar rating para num
-  Map <String, List<Dish>> menu;
+  /*Map <String, List<Dish>> menu*/;
 
-  Restaurant(this.name,
-      this.imgUrl,
-      this.location,
-      this.rating,
-      this.menu);
+  Restaurant({
+    this.name,
+    this.imgUrl,
+    this.location,
+    this.rating
+  /*,
+      this.menu*/);
+}
 
+}
+
+List<Restaurant> restaurantList = [
+  Restaurant(
+    name: 'Grill',
+    imgUrl: 'assets/images/grill_feup.jpeg'
+    location: 'Algures Feup' ,
+    rating: '20%',
+  ),
+  Restaurant(
+    title: 'Jumanji',
+    description:
+    'In Jumanji: The Next Level, the gang is back but the game has changed.',
+    year: 2019,
+    imageUrl: 'https://i.ytimg.com/vi/MJuFdpVCcsY/movieposter_en.jpg'),
+];
+
+
+
+
+
+
+
+/* The one in the branch testingViews
   static Restaurant generateRestaurant(){
     return Restaurant('Grill',
           'assets/images/grill_feup.jpeg',
@@ -23,8 +50,8 @@ class Restaurant {
           '20%',
           {
             'Menu': Dish.generateDishesGrill()
-          });
-  }
+          });*/
+
 
   /*static List<Restaurant> generateRestaurant(){
     return [
