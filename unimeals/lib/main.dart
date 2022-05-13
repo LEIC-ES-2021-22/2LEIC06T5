@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unimeals/view/AboutPage.dart';
 import 'package:unimeals/view/MainPage.dart';
 
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'UniMeals App',
       home: RestaurantsListScreen(),
+      //home: AboutPage(),
     );
   }
 }

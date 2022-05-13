@@ -146,6 +146,13 @@ Regarding technologies, we used Flutter (with the Dart programming language) for
 
 &nbsp;
 
+### Vertical Prototype
+![](https://github.com/LEIC-ES-2021-22/2LEIC06T5/blob/main/images/verticalprototype.png)
+
+In our vertical prototype we added a page with some text with the credits of the app with the group members name.
+
+&nbsp;
+
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
 
 Please contact us!
