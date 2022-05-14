@@ -3,11 +3,19 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
+import 'package:unimeals/view/widgets/changeViewButton.dart';
 
-class restaurantPage extends StatelessWidget {
+class restaurantPage extends StatefulWidget {
   final Restaurant restaurant;
 
   restaurantPage(this.restaurant);
+
+  @override
+  State<restaurantPage> createState() => _restaurantPageState();
+}
+
+class _restaurantPageState extends State<restaurantPage> {
+  var selected = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +36,7 @@ class restaurantPage extends StatelessWidget {
               Container( //apply margin and padding using Container Widget.
                 padding: EdgeInsets.all(30),
                 child: Text(
-                  restaurant.name,
+                  widget.restaurant.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -38,8 +46,16 @@ class restaurantPage extends StatelessWidget {
                   ),
                 ),
               ),
+              //colocar aqui algures a ceninha dos botões
+              ButtonList(selected,
+                      (int index) {
+                    setState(() {
+                      selected = index;
+                    });
+                  }
+              ),
               Image.asset(
-                restaurant.imageUrl,
+                widget.restaurant.imageUrl,
               ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -52,6 +68,7 @@ class restaurantPage extends StatelessWidget {
                 ),
               ),
               FloatingActionButton.extended(
+                heroTag: "button1",
                 label: Text('Ver localização'), // <-- Text
                 backgroundColor: mainRed,
                 icon: Icon( // <-- Icon
@@ -63,7 +80,7 @@ class restaurantPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  restaurant.location,
+                  widget.restaurant.location,
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 22.0),
                 ),
@@ -81,13 +98,14 @@ class restaurantPage extends StatelessWidget {
                 children: [
                   Icon(Icons.star,
                       color: Colors.amber),
-                  Text(restaurant.rating.toString()),
+                  Text(widget.restaurant.rating.toString()),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget> [
                   FloatingActionButton.extended(
+                    heroTag: "button2",
                     label: Text('Gosto'), // <-- Text
                     backgroundColor: mainOrange,
                     icon: Icon( // <-- Icon
@@ -97,6 +115,7 @@ class restaurantPage extends StatelessWidget {
                     onPressed: () {},
                   ),
                   FloatingActionButton.extended(
+                    heroTag: "button3",
                     label: Text('Não gosto'), // <-- Text
                     backgroundColor: mainOrange,
                     icon: Icon( // <-- Icon
