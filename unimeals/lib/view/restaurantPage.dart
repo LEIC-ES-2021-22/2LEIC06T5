@@ -37,6 +37,7 @@ class _restaurantPageState extends State<restaurantPage> {
                 padding: EdgeInsets.all(30),
                 child: Text(
                   widget.restaurant.name,
+                  key: const Key('restaurantPage'), //  Identificador para acceptance test back button
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,

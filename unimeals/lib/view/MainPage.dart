@@ -20,6 +20,7 @@ class RestaurantsListScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               Restaurant restaurant = restaurantList[index];
               return Card(
+                key: const Key('main_page'), //  Identificador para acceptance test forward button
                 child: ListTile(
                   title:
                   Container( //apply margin and padding using Container Widget.
@@ -50,6 +51,7 @@ class RestaurantsListScreen extends StatelessWidget {
                     width: 80,
                     height: 100),
                   trailing: Icon(Icons.arrow_forward_rounded),
+                  key: const Key('button_forward'), //  Identificador para acceptance test forward button
                   onTap: () {
                     Navigator.push(
                         context,
