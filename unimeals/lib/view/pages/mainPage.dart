@@ -5,7 +5,7 @@ import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/pages/restaurantPage.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
-class RestaurantsListScreen extends StatelessWidget {
+class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
