@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unimeals/view/AboutPage.dart';
-import 'package:unimeals/view/MainPage.dart';
+import 'package:unimeals/view/pages/AboutPage.dart';
+import 'package:unimeals/view/pages/MainPage.dart';
 
 
 

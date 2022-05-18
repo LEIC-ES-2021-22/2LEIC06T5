@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
-import 'package:unimeals/view/restaurantPage.dart';
+import 'package:unimeals/view/pages/restaurantPage.dart';
 
 class RestaurantsListScreen extends StatelessWidget {
   @override
