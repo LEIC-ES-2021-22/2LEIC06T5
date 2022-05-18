@@ -1,41 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
+import 'package:unimeals/model/navbarItems.dart';
 
 
 class navbarDrawer extends StatelessWidget{
-  final padding = EdgeInsets.all(10);
 
   @override
   Widget build(BuildContext context){
     return Drawer(
-      child: Material(
-        color: mainRed,
-        child: ListView(
-          padding: padding,
-          children: <Widget>[
-            const SizedBox(height: 48),
-            buildMenuItem(
-              text: 'Testing',
-              icon: Icons.house,
-            ),
-          ],
-        ),
+        child: Material(
+          color: mainRed,
+          child: ListView.builder(
+            itemCount: navbarList.length,
+            itemBuilder: (context, index) {
+            Navbar navbarItem = navbarList[index];
+            return ListTile(
+                title: Container(
+                  child: Text(navbarItem.name,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20)),
+                ),
+                leading: Icon(navbarItem.icon),
+            );
+        }),
       ),
     );
+    }
+
   }
-
-  Widget buildMenuItem({
-    required String text,
-    required IconData icon,
-      }){
-    final color = Colors.white;
-
-    return ListTile(
-      leading: Icon(icon, color: color),
-      title: Text(text,
-           style: TextStyle(color: color)),
-      onTap: () {},
-    );
-  }
-
-}
