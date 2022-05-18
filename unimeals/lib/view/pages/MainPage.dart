@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/pages/restaurantPage.dart';
+import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
 class RestaurantsListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: navbarDrawer(),
         appBar: AppBar(
           title: Text('UniMeals'),
           backgroundColor: Color(0xFF8C2D19),
