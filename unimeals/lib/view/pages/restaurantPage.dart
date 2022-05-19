@@ -75,7 +75,9 @@ class _restaurantPageState extends State<restaurantPage> {
                   Icons.location_pin,
                   size: 24.0,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  //código
+                },
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
