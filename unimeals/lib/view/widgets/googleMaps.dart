@@ -1,7 +1,7 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:unimeals/constants/colors.dart';
 
 class MapSample extends StatefulWidget {
   @override
@@ -25,17 +25,27 @@ class MapSampleState extends State<MapSample> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      appBar: AppBar(
+        title: Text("UniMeals"),
+        automaticallyImplyLeading: false,
+        backgroundColor: mainRed,
+        centerTitle: true,
+        shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
+      ),
       body: GoogleMap(
-        mapType: MapType.hybrid,
+        mapType: MapType.normal,
         initialCameraPosition: _kGooglePlex,
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: _goToTheLake,
-        label: Text('To the lake!'),
-        icon: Icon(Icons.directions_boat),
+        //onPressed: _goToTheLake,
+        onPressed: () {Navigator.pop(context);},
+        label: Text('Voltar'),
+        backgroundColor: mainRed,
+        icon: Icon(Icons.keyboard_return),
       ),
     );
   }

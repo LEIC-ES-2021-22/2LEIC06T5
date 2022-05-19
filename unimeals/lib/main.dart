@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'UniMeals App',
-      home: MapSample(),
+      home: MainPage(),
+      // MapSample(),
       // MainPage(),
-      //home: AboutPage(),
     );
   }
 }

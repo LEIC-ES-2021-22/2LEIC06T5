@@ -1,9 +1,11 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
+import 'package:unimeals/view/widgets/googleMaps.dart';
 
 class restaurantPage extends StatefulWidget {
   final Restaurant restaurant;
@@ -76,7 +78,7 @@ class _restaurantPageState extends State<restaurantPage> {
                   size: 24.0,
                 ),
                 onPressed: () {
-                  //código
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => MapSample()));
                 },
               ),
               Padding(
