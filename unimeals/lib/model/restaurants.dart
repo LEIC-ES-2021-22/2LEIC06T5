@@ -46,12 +46,18 @@ List<Restaurant> restaurantList = [
     name: 'Cantina - Jantar',
     imageUrl: 'assets/images/cantina_feup.jpeg',
     location: 'Algures Feup' ,
-    rating: 29,
+    rating: 42,
   ),
   Restaurant(
     name: 'Bar INESC TEC',
+    imageUrl: 'assets/images/inesctecExterior.jpeg',
+    location: 'Algures Feup' ,
+    rating: 26,
+  ),
+  Restaurant(
+    name: 'Bar da Biblioteca',
     imageUrl: 'assets/images/barBibliotecaExterior.jpg',
     location: 'Algures Feup' ,
-    rating: 29,
+    rating: 50,
   )
 ];
