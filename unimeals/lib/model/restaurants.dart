@@ -46,54 +46,18 @@ List<Restaurant> restaurantList = [
     name: 'Cantina - Jantar',
     imageUrl: 'assets/images/cantina_feup.jpeg',
     location: 'Algures Feup' ,
-    rating: 29,
+    rating: 42,
   ),
   Restaurant(
     name: 'Bar INESC TEC',
+    imageUrl: 'assets/images/inesctecExterior.jpeg',
+    location: 'Algures Feup' ,
+    rating: 26,
+  ),
+  Restaurant(
+    name: 'Bar da Biblioteca',
     imageUrl: 'assets/images/barBibliotecaExterior.jpg',
     location: 'Algures Feup' ,
-    rating: 29,
+    rating: 50,
   )
 ];
-
-
-
-
-/* The one in the branch testingViews
-  static Restaurant generateRestaurant(){
-    return Restaurant('Grill',
-          'assets/images/grill_feup.jpeg',
-          'Algures Feup',
-          '20%',
-          {
-            'Menu': Dish.generateDishesGrill()
-          });*/
-
-
-  /*static List<Restaurant> generateRestaurant(){
-    return [
-      Restaurant('Grill',
-          'assets/images/grill_feup.jpeg',
-          'Algures Feup',
-          '80%',
-          {
-            'Menu': Dish.generateDishesGrill()
-          }),
-      Restaurant('Grill',
-          'assets/images/grill_feup.jpeg',
-          'Algures Feup',
-          '20%',
-          {
-            'Menu': Dish.generateDishesCantina()
-          }),
-    ];
-  }*/
-
-
-
-
-/*Restaurant res0 = Restaurant(0,'Cantina FEUP');
-Restaurant res1 = Restaurant(1,'Grill');
-Restaurant res2 = Restaurant(2,'Cafetaria - Restaurante FEUP');
-Restaurant res3 = Restaurant(3,'Restaurante do INEGI');
-*/
