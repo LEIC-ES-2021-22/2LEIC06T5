@@ -1,21 +1,22 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
+import 'package:unimeals/view/widgets/googleMaps.dart';
 
 class restaurantPage extends StatefulWidget {
-  final Restaurant restaurant;
-
+  Restaurant restaurant;
   restaurantPage(this.restaurant);
 
   @override
-  State<restaurantPage> createState() => _restaurantPageState();
+  State<restaurantPage> createState() => _restaurantPageState(restaurant);
 }
 
 class _restaurantPageState extends State<restaurantPage> {
   var selected = 0;
+  final Restaurant restaurant;
+  _restaurantPageState(this.restaurant);
+
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,7 @@ class _restaurantPageState extends State<restaurantPage> {
               Container( //apply margin and padding using Container Widget.
                 padding: EdgeInsets.all(30),
                 child: Text(
-                  widget.restaurant.name,
+                  restaurant.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -46,7 +47,6 @@ class _restaurantPageState extends State<restaurantPage> {
                   ),
                 ),
               ),
-              //colocar aqui algures a ceninha dos botões
               ButtonList(selected,
                       (int index) {
                     setState(() {
@@ -55,7 +55,7 @@ class _restaurantPageState extends State<restaurantPage> {
                   }
               ),
               Image.asset(
-                widget.restaurant.imageUrl,
+                restaurant.imageUrl,
               ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -75,15 +75,9 @@ class _restaurantPageState extends State<restaurantPage> {
                   Icons.location_pin,
                   size: 24.0,
                 ),
-                onPressed: () {},
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  widget.restaurant.location,
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(fontSize: 22.0),
-                ),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => MapSample(restaurant: restaurant)));
+                },
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -98,7 +92,7 @@ class _restaurantPageState extends State<restaurantPage> {
                 children: [
                   Icon(Icons.star,
                       color: Colors.amber),
-                  Text(widget.restaurant.rating.toString()),
+                  Text(restaurant.rating.toString()),
                 ],
               ),
               Row(

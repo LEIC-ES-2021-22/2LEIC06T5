@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/view/pages/aboutPage.dart';
 import 'package:unimeals/view/pages/mainPage.dart';
-
-
+import 'package:unimeals/view/widgets/googleMaps.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'UniMeals App',
       home: MainPage(),
-      //home: AboutPage(),
+      // MapSample(),
+      // MainPage(),
     );
   }
 }

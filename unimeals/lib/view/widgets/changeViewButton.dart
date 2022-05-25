@@ -14,8 +14,8 @@ class ButtonList extends StatelessWidget {
     return Container(
       height: 100,
       padding: const EdgeInsets.symmetric(vertical: 30),
-      child: ListView.separated(
-          padding: const EdgeInsets.symmetric(horizontal: 80),
+      child: ListView.separated (
+      padding: const EdgeInsets.symmetric(horizontal: 60),
           scrollDirection: Axis.horizontal,
           itemBuilder: (context,index) => GestureDetector(
             onTap: () => callback(index),
@@ -34,8 +34,7 @@ class ButtonList extends StatelessWidget {
               ),
             ),
           ),
-          separatorBuilder: (_, index) => const SizedBox(width: 20),
-          itemCount: 2),
+          separatorBuilder: (_, index) => const SizedBox(width: 40), itemCount: 2),
     );
   }
 }
