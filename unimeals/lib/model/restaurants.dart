@@ -54,10 +54,4 @@ List<Restaurant> restaurantList = [
     location: 'Algures Feup' ,
     rating: 26,
   ),
-  Restaurant(
-    name: 'Bar da Biblioteca',
-    imageUrl: 'assets/images/barBibliotecaExterior.jpg',
-    location: 'Algures Feup' ,
-    rating: 50,
-  )
 ];
