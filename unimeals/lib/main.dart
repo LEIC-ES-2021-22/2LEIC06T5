@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unimeals/view/pages/aboutPage.dart';
 import 'package:unimeals/view/pages/mainPage.dart';
-import 'package:unimeals/view/widgets/googleMaps.dart';
+
 
 void main() {
   runApp(MyApp());
