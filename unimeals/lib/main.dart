@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'UniMeals App',
       home: //MainPage(),
-      restaurantMenu(restaurant),
+      menusPage(restaurant),
       // MapSample(),
       // MainPage(),
     );
