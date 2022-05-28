@@ -61,7 +61,6 @@ class _menusPageState extends State<menusPage> {
                     child: Text('Segunda feira',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
                           fontSize: 24,
                           color: mainRed),
                     ),
@@ -69,6 +68,13 @@ class _menusPageState extends State<menusPage> {
                 ],
               ),
               const ListTile(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(20))),
+                tileColor: secondaryOrange,
                 title: const Text(
                   'Carne',
                   style: TextStyle(
@@ -77,8 +83,21 @@ class _menusPageState extends State<menusPage> {
                     fontSize: 20,
                     color: mainRed),
                 ),
+                subtitle: const Text(
+                  'Bife de vaca com cogumelos e puré de batata',
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: mainRed),
+                ),
               ),
-              ListTile(
+              const ListTile(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(20))),
+                tileColor: secondaryOrange,
                 title: const Text(
                   'Peixe',
                   style: TextStyle(
@@ -87,8 +106,21 @@ class _menusPageState extends State<menusPage> {
                       fontSize: 20,
                       color: mainRed),
                 ),
+                subtitle: const Text(
+                  'Pescada grelhada com molho de manteiga',
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: mainRed),
+                ),
               ),
-              ListTile(
+              const ListTile(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(20))),
+                tileColor: secondaryOrange,
                 title: const Text(
                   'Dieta',
                   style: TextStyle(
@@ -97,14 +129,33 @@ class _menusPageState extends State<menusPage> {
                       fontSize: 20,
                       color: mainRed),
                 ),
+                subtitle: const Text(
+                  'Frango grelhado com esparguete',
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: mainRed),
+                ),
               ),
-              ListTile(
+              const ListTile(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(20))),
+                tileColor: secondaryOrange,
                 title: const Text(
                   'Vegetariano',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       fontSize: 20,
+                      color: mainRed),
+                ),
+                subtitle: const Text(
+                  'Muqueca de tofu',
+                  style: TextStyle(
+                      fontSize: 15,
                       color: mainRed),
                 ),
               ),
