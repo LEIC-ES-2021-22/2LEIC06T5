@@ -47,7 +47,7 @@ class _FilterPageState extends State<FilterPage>{
 
         ),
         SwitchListTile(
-            title: Text('Carnes',
+            title: Text('Carne',
             style: TextStyle(
               color: mainRed,
                 fontSize: 23.0
