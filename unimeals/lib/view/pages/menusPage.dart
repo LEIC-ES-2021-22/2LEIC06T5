@@ -3,6 +3,7 @@ import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/model/dish.dart';
+import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
 class menusPage extends StatefulWidget {
   final Restaurant restaurant;
@@ -21,9 +22,9 @@ class _menusPageState extends State<menusPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: navbarDrawer(),
       appBar: AppBar(
         title: Text('UniMeals'),
-        automaticallyImplyLeading: false,
         backgroundColor: mainRed,
         centerTitle: true,
         shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(

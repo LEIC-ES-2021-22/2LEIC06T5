@@ -4,6 +4,7 @@ import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/pages/menusPage.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/view/widgets/googleMaps.dart';
+import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
 class restaurantPage extends StatefulWidget {
   final Restaurant restaurant;
@@ -21,6 +22,7 @@ class _restaurantPageState extends State<restaurantPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: navbarDrawer(),
       appBar: AppBar(
         title: Text('UniMeals'),
         backgroundColor: mainRed,

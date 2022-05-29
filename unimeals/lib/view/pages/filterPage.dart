@@ -16,6 +16,7 @@ class _FilterPageState extends State<FilterPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      drawer: navbarDrawer(),
       appBar: AppBar(
         title: Text('UniMeals'),
         backgroundColor: mainRed,
