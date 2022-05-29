@@ -11,22 +11,29 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-  Restaurant restaurant =  Restaurant(
+  /*Restaurant restaurant =  Restaurant(
     name: 'Grill',
     imageUrl: 'assets/images/grill_feup.jpeg',
     lat: 41.17638279844958,
     long: -8.595226285289137,
     rating: 94,
-  );
+  );*/
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'UniMeals App',
+<<<<<<< HEAD
       home: //MainPage(),
       menusPage(restaurant),
       //MapSample(),
       //MainPage(),
+=======
+      home: MainPage(),
+      //menusPage(restaurant),
+      // MapSample(),
+      // MainPage(),
+>>>>>>> b15a2281fc126a8e7fe5042b67f1c1fb73f10a91
     );
   }
 }
