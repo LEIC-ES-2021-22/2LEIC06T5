@@ -1,0 +1,120 @@
+[
+  {
+    "codigo":2,
+    "descricao":"Grill",
+    "horario":"12h00 \u00E0s 14h00",
+    "ementas":[
+
+    ]
+  },
+  {
+    "codigo":4,
+    "descricao":"Cafetaria - Restaurante FEUP",
+    "horario":"08h30 \u00E0s 17h30",
+    "ementas":[
+
+    ]
+  },
+  {
+    "codigo":5,
+    "descricao":"Restaurante do INEGI",
+    "horario":"",
+    "ementas":[
+
+    ]
+  },
+  {
+    "codigo":6,
+    "descricao":"Cantina - Almo\u00E7o",
+    "horario":"11h30 \u00E0s 14h00",
+    "ementas":[
+      {
+        "estado":"Aberto",
+        "data":"29-05-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Creme de legumes e feij\u00E3o branco",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"\\Borrego assado com batata assada e grelos",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Perca assada \u00E0 lagareiro com batata a murro",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Perca escalfada com batata cozida polvilhada com salsa",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Ensopado de lentilhas com legumes e esmagada de batata",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo":7,
+    "descricao":"Cantina - Jantar",
+    "horario":"18h30 \u00E0s 20h30",
+    "ementas":[
+      {
+        "estado":"Aberto",
+        "data":"29-05-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de br\u00F3colos e cenoura",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Alheira no forno com arroz de penca",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Filete de pangasius corado com arroz de penca",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bife de peru grelhado com massa fusilli",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Ma\u00E7\u00E3 salteada com soja e legumes, acompanhada de massa",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo":8,
+    "descricao":"Ementa Bar INESC TEC",
+    "horario":"",
+    "ementas":[
+
+    ]
+  }
+]
