@@ -53,9 +53,34 @@ class _menusPageState extends State<menusPage> {
                     });
                   }
               ),
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Text('Horário: 0:00 às 00:00',
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text('Segunda feira',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          decoration: TextDecoration.underline,
+                          fontSize: 24,
+                          color: mainRed),
+                    ),
+                  ),
+                ],
+              ),
+              const ListTile(
+                title: const Text(
+                  'Carne',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                    fontSize: 20,
+                    color: mainRed),
+                ),
+              ),
+              ListTile(
+                title: const Text(
+                  'Peixe',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
@@ -63,41 +88,30 @@ class _menusPageState extends State<menusPage> {
                       color: mainRed),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  'Dá o teu feedback',
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(fontSize: 22.0),
+              ListTile(
+                title: const Text(
+                  'Dieta',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                      fontSize: 20,
+                      color: mainRed),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.star,
-                      color: Colors.amber),
-                  Text(restaurant.rating.toString()),
-                ],
+              ListTile(
+                title: const Text(
+                  'Vegetariano',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                      fontSize: 20,
+                      color: mainRed),
+                ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget> [
-                  FloatingActionButton.extended(
-                    heroTag: "button2",
-                    label: Text('Gosto'), // <-- Text
-                    backgroundColor: mainOrange,
-                    icon: Icon( // <-- Icon
-                      Icons.thumb_up_alt_outlined,
-                      size: 15.0,
-                    ),
-                    onPressed: () {},
-                  ),
-                ],
-              )
             ],
           ),
         ),
-      ),
+      )
     );
   }
 }
