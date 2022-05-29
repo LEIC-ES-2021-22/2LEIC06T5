@@ -24,8 +24,7 @@ For any student who likes to eat near Feup, UniMeals is the best app to help you
 
 
 ## Elevator Pitch
-For students, professors and all members of the FEUP community, who usually eat out at least once a week and prefer a place close to the university, Uni Meals is the best option for you to have access to the weekly menus of all the restaurants/canteens belonging to your campus. There, you will be able to consult all the places where you can eat, the types of dishes available including fish, meat, vegetarian and diet, the menu for each day of the week and the total price of each dishes according to your choice.
- It has interactive interface that will make it easier for you to access all the information and compare each place and each dish to choose the best option for your budget. 
+Feup students often need to eat near their university and end up wasting time figuring out what and where to eat not knowing how to get that information. UniMeals solves that problem by gathering everything about the best places to eat available. All restaurants and canteens locations are presented next to all the menus available, the data presented can be personalized and the users can even rate the places that they went to.
 
 &nbsp; 
 
