@@ -18,7 +18,7 @@ class ButtonList extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 60),
           scrollDirection: Axis.horizontal,
           itemBuilder: (context,index) => GestureDetector(
-            onTap: () => callback(index),
+            onTap: () {callback(index);},
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
               decoration: BoxDecoration(

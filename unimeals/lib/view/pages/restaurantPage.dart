@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
+import 'package:unimeals/view/pages/menusPage.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/view/widgets/googleMaps.dart';
 
 class restaurantPage extends StatefulWidget {
-  Restaurant restaurant;
+  final Restaurant restaurant;
   restaurantPage(this.restaurant);
 
   @override
@@ -16,7 +17,6 @@ class _restaurantPageState extends State<restaurantPage> {
   var selected = 0;
   final Restaurant restaurant;
   _restaurantPageState(this.restaurant);
-
 
   @override
   Widget build(BuildContext context) {
@@ -50,6 +50,7 @@ class _restaurantPageState extends State<restaurantPage> {
               ButtonList(selected,
                       (int index) {
                     setState(() {
+                      if(index == 1) {Navigator.push(context, PageRouteBuilder(pageBuilder: (_,__,___) => menusPage(restaurant))); index--;}
                       selected = index;
                     });
                   }
