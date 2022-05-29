@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/restaurants.dart';
+import 'package:unimeals/view/pages/restaurantPage.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/model/dish.dart';
 
 class menusPage extends StatefulWidget {
-  Restaurant restaurant;
+  final Restaurant restaurant;
   menusPage(this.restaurant);
 
   @override
@@ -23,7 +24,8 @@ class _menusPageState extends State<menusPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('UniMeals'),
-        backgroundColor: Color(0xFF8C2D19),
+        automaticallyImplyLeading: false,
+        backgroundColor: mainRed,
         centerTitle: true,
         shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
@@ -50,6 +52,7 @@ class _menusPageState extends State<menusPage> {
               ButtonList(selected,
                       (int index) {
                     setState(() {
+                      if(index == 0) {Navigator.pop(context);}
                       selected = index;
                     });
                   }

@@ -52,10 +52,7 @@ class MainPage extends StatelessWidget {
                     height: 100),
                   trailing: Icon(Icons.arrow_forward_rounded),
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => restaurantPage(restaurant)));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => restaurantPage(restaurant)));
                   },
                 ),
               );
