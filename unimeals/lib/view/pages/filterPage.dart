@@ -2,31 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
-
-
-class FilterPage extends StatefulWidget{
+class FilterPage extends StatefulWidget {
   @override
   _FilterPageState createState()=> _FilterPageState();
 
 }
 class _FilterPageState extends State<FilterPage>{
-    bool _switchcarne =true;
-    bool _switchpeixe =true;
-    bool _switchdieta =true;
-    bool _switchvegetariano =true;
+    static bool _switchcarne = true;
+    static bool _switchpeixe = true;
+    static bool _switchdieta = true;
+    static bool _switchvegetariano = true;
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('UniMeals',
-        ),
-        backgroundColor: Color(0xFF8C2D19),
+        title: Text('UniMeals'),
+        backgroundColor: mainRed,
         centerTitle: true,
         shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
@@ -58,7 +50,7 @@ class _FilterPageState extends State<FilterPage>{
             value: _switchcarne,
             onChanged: (bool value){
               setState((){
-                _switchcarne=value;
+                _switchcarne = value;
               });
             }
         ),
@@ -74,7 +66,7 @@ class _FilterPageState extends State<FilterPage>{
             value: _switchpeixe,
             onChanged: (bool value){
               setState((){
-                _switchpeixe=value;
+                _switchpeixe = value;
               });
             }
         ),
@@ -90,7 +82,7 @@ class _FilterPageState extends State<FilterPage>{
             value: _switchdieta,
             onChanged: (bool value){
               setState((){
-                _switchdieta=value;
+                _switchdieta = value;
               });
             }
         ),
@@ -106,7 +98,7 @@ class _FilterPageState extends State<FilterPage>{
             value: _switchvegetariano,
             onChanged: (bool value){
               setState((){
-                _switchvegetariano=value;
+                _switchvegetariano = value;
               });
             }
         )
