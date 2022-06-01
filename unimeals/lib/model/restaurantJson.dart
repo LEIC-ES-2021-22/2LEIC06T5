@@ -48,52 +48,44 @@ class Ementa {
   List<Prato> pratos;
 
   factory Ementa.fromJson(Map<String, dynamic> json) => Ementa(
-    estado: estadoValues.map[json["estado"]],
+    estado: json["estado"],
     data: json["data"],
     pratos: List<Prato>.from(json["pratos"].map((x) => Prato.fromJson(x))),
   );
 
   Map<String, dynamic> toJson() => {
-    "estado": estadoValues.reverse[estado],
+    "estado": estado,
     "data": data,
     "pratos": List<dynamic>.from(pratos.map((x) => x.toJson())),
   };
 }
 
-enum Estado { ABERTO }
-
-final estadoValues = EnumValues({
-  "Aberto": Estado.ABERTO
-});
 
 class Prato {
   Prato({
-    this.estado,
-    this.descricao,
-    this.tipo,
-    this.tipoDescr,
+    this.descricao = "",
+    this.tipo = 0,
+    this.tipoDescr = "",
   });
 
-  Estado estado;
   String descricao;
   int tipo;
   String tipoDescr;
 
   factory Prato.fromJson(Map<String, dynamic> json) => Prato(
-    estado: estadoValues.map[json["estado"]],
     descricao: json["descricao"],
     tipo: json["tipo"],
     tipoDescr: json["tipo_descr"],
   );
 
   Map<String, dynamic> toJson() => {
-    "estado": estadoValues.reverse[estado],
     "descricao": descricao,
     "tipo": tipo,
     "tipo_descr": tipoDescr,
   };
 }
 
+/*
 class EnumValues<T> {
   Map<String, T> map;
   Map<T, String> reverseMap;
@@ -106,5 +98,5 @@ class EnumValues<T> {
     }
     return reverseMap;
   }
-}
+}*/
 
