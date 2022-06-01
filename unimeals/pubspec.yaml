@@ -32,6 +32,7 @@ dependencies:
   gherkin: ^2.0.2
   flutter_gherkin: ^2.0.0
   google_maps_flutter: ^2.1.5
+  http: any
 
 
   # The following adds the Cupertino Icons font to your application.
