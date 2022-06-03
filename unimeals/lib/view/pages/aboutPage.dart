@@ -23,7 +23,7 @@ class AboutPage extends StatelessWidget {
               '  Uni\nMeals',
               style: TextStyle(
                 fontSize: 30.0,
-                color: Color(0xFF8C2D19),
+                color: mainRed,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -34,7 +34,7 @@ class AboutPage extends StatelessWidget {
               'Framework desenvolvida pelo grupo 2LEIC06T5 no âmbito da unidade curricular Engenharia de Software.',
               style: TextStyle(
                 fontSize: 15.0,
-                color: Color(0xFF8C2D19),
+                color: mainRed,
               ),
             ),
             padding: EdgeInsets.all(25.0),
@@ -44,8 +44,29 @@ class AboutPage extends StatelessWidget {
               'De estudantes, para estudantes!',
               style: TextStyle(
                 fontSize: 15.0,
-                color: Color(0xFF8C2D19),
+                color: mainRed,
               ),
+            ),
+            padding: EdgeInsets.all(25.0),
+          ),
+          Container(
+            child: Text(
+                'Como funciona a Uni Meals?' ,
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: mainRed,
+                  fontWeight: FontWeight.bold,
+                )
+            ),
+            padding: EdgeInsets.all(25.0),
+          ),
+          Container(
+              child: Text(
+                'Quando abres a nossa aplicação, tens acesso a uma lista dos restaurantes da FEUP. ',
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: mainRed,
+                )
             ),
             padding: EdgeInsets.all(25.0),
           ),
@@ -53,8 +74,8 @@ class AboutPage extends StatelessWidget {
             child: Text(
               'Integrantes do grupo:',
               style: TextStyle(
-                fontSize: 15.0,
-                color: Color(0xFF8C2D19),
+                fontSize: 20.0,
+                color: mainRed,
                 fontWeight: FontWeight.bold,
               ),
             ),
