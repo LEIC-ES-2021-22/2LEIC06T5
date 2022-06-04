@@ -21,7 +21,7 @@ void main() async {
 
 class Services{
 
-   /*Future<List<Restaurant>> getRestaurants() async{
+   Future<List<Restaurant>> getRestaurants() async{
       var response = await http.get(Uri.parse(cantinasUrl));
       if (response.statusCode == 200) {
         final List<Restaurant> restaurants = restaurantFromJson(response.body)
@@ -30,9 +30,7 @@ class Services{
       } else {
       throw Exception('Failed to weee read $cantinasUrl');
       }
-  }*/
-
-
+  }
 }
 
 
