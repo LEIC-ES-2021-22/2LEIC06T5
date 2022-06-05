@@ -111,16 +111,6 @@ class _restaurantPageState extends State<restaurantPage> {
                     ),
                     onPressed: () {},
                   ),
-                  FloatingActionButton.extended(
-                    heroTag: "button3",
-                    label: Text('Não gosto'), // <-- Text
-                    backgroundColor: mainOrange,
-                    icon: Icon( // <-- Icon
-                      Icons.thumb_down_alt_outlined,
-                      size: 15.0,
-                    ),
-                    onPressed: () {},
-                  ),
                 ],
               )
             ],
