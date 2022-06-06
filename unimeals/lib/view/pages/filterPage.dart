@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
+import 'package:unimeals/model/filters.dart';
 
 class FilterPage extends StatefulWidget {
   @override
@@ -8,10 +9,7 @@ class FilterPage extends StatefulWidget {
 
 }
 class _FilterPageState extends State<FilterPage>{
-    static bool _switchcarne = true;
-    static bool _switchpeixe = true;
-    static bool _switchdieta = true;
-    static bool _switchvegetariano = true;
+
 
   @override
   Widget build(BuildContext context){
@@ -48,10 +46,10 @@ class _FilterPageState extends State<FilterPage>{
             ),
             activeTrackColor: mainRed,
             activeColor: Colors.white,
-            value: _switchcarne,
+            value: Filters().switchcarne,
             onChanged: (bool value){
               setState((){
-                _switchcarne = value;
+                Filters().switchcarne = value;
               });
             }
         ),
@@ -64,10 +62,10 @@ class _FilterPageState extends State<FilterPage>{
             ),
             activeTrackColor: mainRed,
             activeColor: Colors.white,
-            value: _switchpeixe,
+            value: Filters().switchpeixe,
             onChanged: (bool value){
               setState((){
-                _switchpeixe = value;
+                Filters().switchpeixe = value;
               });
             }
         ),
@@ -80,10 +78,10 @@ class _FilterPageState extends State<FilterPage>{
             ),
             activeTrackColor: mainRed,
             activeColor: Colors.white,
-            value: _switchdieta,
+            value: Filters().switchdieta,
             onChanged: (bool value){
               setState((){
-                _switchdieta = value;
+                Filters().switchdieta = value;
               });
             }
         ),
@@ -96,10 +94,10 @@ class _FilterPageState extends State<FilterPage>{
             ),
             activeTrackColor: mainRed,
             activeColor: Colors.white,
-            value: _switchvegetariano,
+            value: Filters().switchvegetariano,
             onChanged: (bool value){
               setState((){
-                _switchvegetariano = value;
+                Filters().switchvegetariano = value;
               });
             }
         )
