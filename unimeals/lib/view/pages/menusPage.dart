@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
+import 'package:unimeals/model/filters.dart';
 import 'package:unimeals/model/restaurants.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/model/dish.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
+
+
 
 class menusPage extends StatefulWidget {
   final Restaurant restaurant;
@@ -71,7 +74,9 @@ class _menusPageState extends State<menusPage> {
                   ),
                 ],
               ),
-              const ListTile(
+              Visibility(
+                visible:Filters().switchcarne,
+                child: ListTile(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -82,10 +87,10 @@ class _menusPageState extends State<menusPage> {
                 title: const Text(
                   'Carne',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    decoration: TextDecoration.underline,
-                    fontSize: 20,
-                    color: mainRed),
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                      fontSize: 20,
+                      color: mainRed),
                 ),
                 subtitle: const Text(
                   'Bife de vaca com cogumelos e puré de batata',
@@ -93,54 +98,60 @@ class _menusPageState extends State<menusPage> {
                       fontSize: 15,
                       color: mainRed),
                 ),
-              ),
-              const ListTile(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                        bottomRight: Radius.circular(20),
-                        bottomLeft: Radius.circular(20))),
-                tileColor: secondaryOrange,
-                title: const Text(
-                  'Peixe',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                      fontSize: 20,
-                      color: mainRed),
-                ),
-                subtitle: const Text(
-                  'Pescada grelhada com molho de manteiga',
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: mainRed),
-                ),
-              ),
-              const ListTile(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                        bottomRight: Radius.circular(20),
-                        bottomLeft: Radius.circular(20))),
-                tileColor: secondaryOrange,
-                title: const Text(
-                  'Dieta',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                      fontSize: 20,
-                      color: mainRed),
-                ),
-                subtitle: const Text(
-                  'Frango grelhado com esparguete',
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: mainRed),
-                ),
-              ),
-              const ListTile(
+              )),
+               Visibility(
+                 visible: Filters().switchpeixe,
+                 child: ListTile(
+                 shape: RoundedRectangleBorder(
+                     borderRadius: BorderRadius.only(
+                         topLeft: Radius.circular(20),
+                         topRight: Radius.circular(20),
+                         bottomRight: Radius.circular(20),
+                         bottomLeft: Radius.circular(20))),
+                 tileColor: secondaryOrange,
+                 title: const Text(
+                   'Peixe',
+                   style: TextStyle(
+                       fontWeight: FontWeight.bold,
+                       decoration: TextDecoration.underline,
+                       fontSize: 20,
+                       color: mainRed),
+                 ),
+                 subtitle: const Text(
+                   'Pescada grelhada com molho de manteiga',
+                   style: TextStyle(
+                       fontSize: 15,
+                       color: mainRed),
+                 ),
+               ),),
+               Visibility(
+                 visible: Filters().switchdieta,
+                 child: ListTile(
+                 shape: RoundedRectangleBorder(
+                     borderRadius: BorderRadius.only(
+                         topLeft: Radius.circular(20),
+                         topRight: Radius.circular(20),
+                         bottomRight: Radius.circular(20),
+                         bottomLeft: Radius.circular(20))),
+                 tileColor: secondaryOrange,
+                 title: const Text(
+                   'Dieta',
+                   style: TextStyle(
+                       fontWeight: FontWeight.bold,
+                       decoration: TextDecoration.underline,
+                       fontSize: 20,
+                       color: mainRed),
+                 ),
+                 subtitle: const Text(
+                   'Frango grelhado com esparguete',
+                   style: TextStyle(
+                       fontSize: 15,
+                       color: mainRed),
+                 ),
+               )),
+              Visibility(
+                visible:Filters().switchvegetariano,
+                  child: ListTile(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -162,7 +173,7 @@ class _menusPageState extends State<menusPage> {
                       fontSize: 15,
                       color: mainRed),
                 ),
-              ),
+              )),
             ],
           ),
         ),
