@@ -1,5 +1,5 @@
 class Filters {
-  static final Filters _filters = new Filters._internal();
+  static final Filters _filters = Filters._internal();
   bool switchcarne = true;
   bool switchpeixe = true;
   bool switchdieta = true;
@@ -8,6 +8,5 @@ class Filters {
   factory Filters(){
     return _filters;
   }
-
   Filters._internal();
 }
