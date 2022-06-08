@@ -1,9 +1,12 @@
 
+
+
+
 class Restaurant{
   int code;
   String restaurantName;
   String schedule;
-  List<Menu> menus;
+  List<Menu> menu;
 
 
   Restaurant(
@@ -11,15 +14,15 @@ class Restaurant{
   this.code = 0,
   this.restaurantName = '',
   this.schedule = '',
-    this.menus = const <Menu>[],
+    this.menu = const <Menu>[],
   });
 
   factory Restaurant.fromJson(dynamic json){
     return Restaurant(
-        code: json["codigo"],
-        restaurantName: json["descricao"],
-        schedule: json["horario"],
-        menus: List<Menu>.from(json["ementas"].map((x) => Menu.fromJson(x)))
+        code: json[0]["codigo"],
+        restaurantName: json[0]["descricao"],
+        schedule: json[0]["horario"],
+        menu: List<Menu>.from(json[0]["ementas"].map((x) => Menu.fromJson(x)))
     );
   }
 }
@@ -54,8 +57,8 @@ class Dish{
 
   factory Dish.fromJson(Map<String, dynamic> json) {
     return Dish(
-        dishName: json['descricao'],
-        dishType: json['tipo_descr']);
+        dishName: json["descricao"] = '',
+        dishType: json["tipo_descr"]);
   }
 }
 
