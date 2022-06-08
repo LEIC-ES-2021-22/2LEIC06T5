@@ -5,7 +5,6 @@ import 'package:unimeals/view/pages/menusPage.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/view/widgets/googleMaps.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
-import 'package:unimeals/model/ratings.dart';
 
 class restaurantPage extends StatefulWidget {
   final Restaurant restaurant;
@@ -106,23 +105,23 @@ class _restaurantPageState extends State<restaurantPage> {
                   FloatingActionButton.extended(
                     heroTag: "button2",
                     label: Text('Gosto'), // <-- Text
-                    backgroundColor: Ratings().likecolor,
+                    backgroundColor: restaurant.likecolor,
                     icon: Icon( // <-- Icon
                       Icons.thumb_up_alt_outlined,
                       size: 15.0,
                     ),
                     onPressed: () {
                       setState(() {
-                        if(!Ratings().liked && !Ratings().disliked) { //se nao dei like nem dislike dou like
+                        if(!restaurant.liked && !restaurant.disliked) { //se nao dei like nem dislike dou like
                           restaurant.rating++;
-                          Ratings().likecolor = mainRed;
-                          Ratings().liked = true;
-                          Ratings().disliked = false;
-                        } else if (Ratings().liked && !Ratings().disliked) { //se ja dei like nao quero deixar dar dislike ate que tire o like
+                          restaurant.likecolor = mainRed;
+                          restaurant.liked = true;
+                          restaurant.disliked = false;
+                        } else if (restaurant.liked && !restaurant.disliked) { //se ja dei like nao quero deixar dar dislike ate que tire o like
                           restaurant.rating--;
-                          Ratings().likecolor = mainGray;
-                          Ratings().liked = false;
-                          Ratings().disliked = false;
+                          restaurant.likecolor = mainGray;
+                          restaurant.liked = false;
+                          restaurant.disliked = false;
                         }
                       });
                     },
@@ -130,24 +129,24 @@ class _restaurantPageState extends State<restaurantPage> {
                     FloatingActionButton.extended(
                       heroTag: "button3",
                       label: Text('Não gosto'), // <-- Text
-                      backgroundColor: Ratings().dislikecolor,
+                      backgroundColor: restaurant.dislikecolor,
                       icon: Icon( // <-- Icon
                         Icons.thumb_down_alt_outlined,
                         size: 15.0,
                       ),
                       onPressed: () {
                         setState(() {
-                          if(!Ratings().disliked && !Ratings().liked) {
+                          if(!restaurant.disliked && !restaurant.liked) {
                             restaurant.rating--;
-                            Ratings().dislikecolor = mainRed;
-                            Ratings().disliked = true;
-                            Ratings().liked = false;
+                            restaurant.dislikecolor = mainRed;
+                            restaurant.disliked = true;
+                            restaurant.liked = false;
                           }
-                          else if (Ratings().disliked) {
+                          else if (restaurant.disliked) {
                             restaurant.rating++;
-                            Ratings().dislikecolor = mainGray;
-                            Ratings().disliked = false;
-                            Ratings().liked = false;
+                            restaurant.dislikecolor = mainGray;
+                            restaurant.disliked = false;
+                            restaurant.liked = false;
                           }
                         });
                       },
