@@ -4,7 +4,90 @@
     "descricao":"Grill",
     "horario":"12h00 \u00E0s 14h00",
     "ementas":[
-
+      {
+        "estado":"Aberto",
+        "data":"07-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Croquetes de batata com carne picada e arroz alegre",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bacalhau fresco \u00E0 z\u00E9 do pipo",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Tomates recheados com arroz de milho",
+            "tipo":4,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"08-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Frango assado com arroz de tomate",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Truta com bacon com batata cozida",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Feijoada de tofu",
+            "tipo":4,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"09-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Lombo de porco assado com ma\u00E7\u00E3",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Salm\u00E3o grelhado com molho de manteiga e batata a murro",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Paella vegetariana (pimento, feij\u00E3o-verde, cenoura e seitan)",
+            "tipo":4,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"10-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Feriado",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          }
+        ]
+      }
     ]
   },
   {
@@ -12,7 +95,108 @@
     "descricao":"Cafetaria - Restaurante FEUP",
     "horario":"08h30 \u00E0s 17h30",
     "ementas":[
-
+      {
+        "estado":"Aberto",
+        "data":"07-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Vitela assada no forno com batata assada ",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Peixe \u00E0 Br\u00E1s",
+            "tipo":2,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Seitan \u00E0 Kiev",
+            "tipo":3,
+            "tipo_descr":"Vegetariano"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"F\u00EDgado de vitela grelhado com batata cozida",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"08-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Arroz de pato \u00E0 Antiga",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Abr\u00F3tea assada no forno com legumes salteados",
+            "tipo":2,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Tortilha vegetariana com salada mista",
+            "tipo":3,
+            "tipo_descr":"Vegetariano"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Sardinha assada com batata cozida ",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"09-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Alheira \u00E0 Moda de Mirandela",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Escalopes de sardinha com arroz de feij\u00E3o ",
+            "tipo":2,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Filetes de tofu com salada russa",
+            "tipo":3,
+            "tipo_descr":"Vegetariano"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Frango cozido com esparguete ",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"10-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Feriado",
+            "tipo":1,
+            "tipo_descr":"Carne"
+          }
+        ]
+      }
     ]
   },
   {
@@ -20,7 +204,66 @@
     "descricao":"Restaurante do INEGI",
     "horario":"",
     "ementas":[
-
+      {
+        "estado":"Aberto",
+        "data":"07-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Bifes \u00E0 Portuguesa",
+            "tipo":1,
+            "tipo_descr":"Prato de Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Peixe misto grelhado",
+            "tipo":2,
+            "tipo_descr":"Prato de Peixe"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"08-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Costeletas de Anho",
+            "tipo":1,
+            "tipo_descr":"Prato de Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bacalhau \u00E0 casa",
+            "tipo":2,
+            "tipo_descr":"Prato de Peixe"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"09-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Panados de peru",
+            "tipo":1,
+            "tipo_descr":"Prato de Carne"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"10-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Feriado",
+            "tipo":1,
+            "tipo_descr":"Prato de Carne"
+          }
+        ]
+      }
     ]
   },
   {
@@ -30,35 +273,215 @@
     "ementas":[
       {
         "estado":"Aberto",
-        "data":"29-05-2022",
+        "data":"07-06-2022",
         "pratos":[
           {
             "estado":"Aberto",
-            "descricao":"Creme de legumes e feij\u00E3o branco",
+            "descricao":"Sopa de alho-franc\u00EAs e couve-flor",
             "tipo":1,
             "tipo_descr":"Sopa"
           },
           {
             "estado":"Aberto",
-            "descricao":"\\Borrego assado com batata assada e grelos",
+            "descricao":"Perna de porco assada com ma\u00E7\u00E3 e arroz",
             "tipo":2,
             "tipo_descr":"Carne"
           },
           {
             "estado":"Aberto",
-            "descricao":"Perca assada \u00E0 lagareiro com batata a murro",
+            "descricao":"Perca escalfada com salada de batata",
             "tipo":3,
             "tipo_descr":"Peixe"
           },
           {
             "estado":"Aberto",
-            "descricao":"Perca escalfada com batata cozida polvilhada com salsa",
+            "descricao":"Peru grelhado com macarr\u00E3o",
             "tipo":4,
             "tipo_descr":"Dieta"
           },
           {
             "estado":"Aberto",
-            "descricao":"Ensopado de lentilhas com legumes e esmagada de batata",
+            "descricao":"Massa salteada vegetariana (soja, milho e br\u00F3colos)",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"08-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de couve-lombarda ",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Perna de frango no churrasco com pur\u00E9 de batata e br\u00F3colos",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Potas estufadas com pur\u00E9 de batata e tostinhas",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Potas grelhadas com arroz branco",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Caril de tofu com saladinha de batata",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"09-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Feij\u00E3o branco e nabi\u00E7as",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Cozido \u00E0 Portuguesa",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Petinga frita com arroz de feij\u00E3o",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Tirinhas de frango cozidas com farfalle",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Salada de feij\u00E3o-frade com mistura chinesa",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"10-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de couve galega",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Tortilha de carne de porco no forno com salada de alface",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bolinhos de bacalhau no forno com feij\u00E3o-frade",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Abr\u00F3tea cozida com batata cozida e br\u00F3colos",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Massa \u00E0 lavrador com seitan",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"11-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de gr\u00E3o-de-bico e br\u00F3colos",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Coelho \u00E0 ca\u00E7ador com batata cozida",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Red fish assado com molho de mostarda e batata assada",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Costeletas grelhadas com arroz",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Rolo de soja assado com arroz",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"12-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de hortali\u00E7a e feij\u00E3o branco",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Peru corado recheado com legumes e massa cotovelos",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Terrina do mar (red fish, pescada, pimentos e cebola)",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Raia grelhada com arroz branco e repolho",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Gr\u00E3o estufado com legumes e arroz de coentros",
             "tipo":5,
             "tipo_descr":"Vegetariano"
           }
@@ -73,35 +496,215 @@
     "ementas":[
       {
         "estado":"Aberto",
-        "data":"29-05-2022",
+        "data":"07-06-2022",
         "pratos":[
           {
             "estado":"Aberto",
-            "descricao":"Sopa de br\u00F3colos e cenoura",
+            "descricao":"Sopa de couve saboia e gr\u00E3o-de-bico",
             "tipo":1,
             "tipo_descr":"Sopa"
           },
           {
             "estado":"Aberto",
-            "descricao":"Alheira no forno com arroz de penca",
+            "descricao":"Roti de peru assado com batata e legumes salteados",
             "tipo":2,
             "tipo_descr":"Carne"
           },
           {
             "estado":"Aberto",
-            "descricao":"Filete de pangasius corado com arroz de penca",
+            "descricao":"Escamudo assado com arroz de pimentos",
             "tipo":3,
             "tipo_descr":"Peixe"
           },
           {
             "estado":"Aberto",
-            "descricao":"Bife de peru grelhado com massa fusilli",
+            "descricao":"Corvina cozida com batata e couve-flor",
             "tipo":4,
             "tipo_descr":"Dieta"
           },
           {
             "estado":"Aberto",
-            "descricao":"Ma\u00E7\u00E3 salteada com soja e legumes, acompanhada de massa",
+            "descricao":"Estufado de seitan com batata cozida",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"08-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de ab\u00F3bora e repolho",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Macarr\u00E3o gratinado com carne de vaca picada",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Lombinhos de solha no forno com molho de cenoura e arroz",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Carne de vaca cozida com arroz e repolho cozido",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Legumes \u00E0 gomes de s\u00E1",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"09-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de couve portuguesa e feij\u00E3o branco",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Omelete mista no forno c/ batata saltaeada e salada ",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Paloco com natas (batata cubos, natas, paloco)",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Filete de alabote ao vapor com batata e molho de salsa",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Alm\u00F4ndegas de gr\u00E3o com molho de tomate e tagliatelle",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"10-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Creme de cenoura",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"P\u00E1 de porco no tacho com de cebolada e arroz de cenoura",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bacalhau cozido com todos (bacalhau, batata, ovo e repolho)",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"F\u00EAveras de porco grelhadas com arroz branco e hortali\u00E7a",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Beringela e pimentos grelhados com feij\u00E3o preto e arroz",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"11-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de grelos",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Carne de vaca estufada com ervilhas e arroz",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Maruca estufada com arroz de salsa",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Filete de pangasius ao vapor com batata cozida e br\u00F3colos",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Lentilhas estufadas \u00E0 primaveril (ervilha e cenoura) c arroz",
+            "tipo":5,
+            "tipo_descr":"Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"12-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Sopa de feij\u00E3o-verde",
+            "tipo":1,
+            "tipo_descr":"Sopa"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Carne de porco \u00E0 portuguesa",
+            "tipo":2,
+            "tipo_descr":"Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Pargo grelhado com arroz de salsa",
+            "tipo":3,
+            "tipo_descr":"Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Perna de frango cozida com batata cozida",
+            "tipo":4,
+            "tipo_descr":"Dieta"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Salteado de tofu e legumes com batata assada",
             "tipo":5,
             "tipo_descr":"Vegetariano"
           }
@@ -114,7 +717,90 @@
     "descricao":"Ementa Bar INESC TEC",
     "horario":"",
     "ementas":[
-
+      {
+        "estado":"Aberto",
+        "data":"07-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Bacalhau com gr\u00E3o",
+            "tipo":1,
+            "tipo_descr":"Prato de Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Caril de frango",
+            "tipo":2,
+            "tipo_descr":"Prato de Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Caril de tofu",
+            "tipo":3,
+            "tipo_descr":"Prato Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"08-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Filetes de perca",
+            "tipo":1,
+            "tipo_descr":"Prato de Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bolonhesa",
+            "tipo":2,
+            "tipo_descr":"Prato de Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Bolonhesa de soja",
+            "tipo":3,
+            "tipo_descr":"Prato Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"09-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Maionese de atum",
+            "tipo":1,
+            "tipo_descr":"Prato de Peixe"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Folhado de frango",
+            "tipo":2,
+            "tipo_descr":"Prato de Carne"
+          },
+          {
+            "estado":"Aberto",
+            "descricao":"Falafel",
+            "tipo":3,
+            "tipo_descr":"Prato Vegetariano"
+          }
+        ]
+      },
+      {
+        "estado":"Aberto",
+        "data":"10-06-2022",
+        "pratos":[
+          {
+            "estado":"Aberto",
+            "descricao":"Feriado",
+            "tipo":1,
+            "tipo_descr":"Prato de Peixe"
+          }
+        ]
+      }
     ]
   }
 ]
