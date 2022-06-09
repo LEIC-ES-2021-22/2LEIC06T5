@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/filters.dart';
 import 'package:unimeals/model/restaurants.dart';
+import 'package:unimeals/model/dish.dart';
 import 'package:unimeals/view/widgets/changeViewButton.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
