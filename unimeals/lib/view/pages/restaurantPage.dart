@@ -16,6 +16,7 @@ class restaurantPage extends StatefulWidget {
 
 class _restaurantPageState extends State<restaurantPage> {
   var selected = 0;
+
   final Restaurant restaurant;
   _restaurantPageState(this.restaurant);
 
@@ -104,22 +105,51 @@ class _restaurantPageState extends State<restaurantPage> {
                   FloatingActionButton.extended(
                     heroTag: "button2",
                     label: Text('Gosto'), // <-- Text
-                    backgroundColor: mainOrange,
+                    backgroundColor: restaurant.likecolor,
                     icon: Icon( // <-- Icon
                       Icons.thumb_up_alt_outlined,
                       size: 15.0,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        if(!restaurant.liked && !restaurant.disliked) { //se nao dei like nem dislike dou like
+                          restaurant.rating++;
+                          restaurant.likecolor = mainRed;
+                          restaurant.liked = true;
+                          restaurant.disliked = false;
+                        } else if (restaurant.liked && !restaurant.disliked) { //se ja dei like nao quero deixar dar dislike ate que tire o like
+                          restaurant.rating--;
+                          restaurant.likecolor = secondaryRed;
+                          restaurant.liked = false;
+                          restaurant.disliked = false;
+                        }
+                      });
+                    },
                   ),
-                  FloatingActionButton.extended(
-                    heroTag: "button3",
-                    label: Text('Não gosto'), // <-- Text
-                    backgroundColor: mainOrange,
-                    icon: Icon( // <-- Icon
-                      Icons.thumb_down_alt_outlined,
-                      size: 15.0,
-                    ),
-                    onPressed: () {},
+                    FloatingActionButton.extended(
+                      heroTag: "button3",
+                      label: Text('Não gosto'), // <-- Text
+                      backgroundColor: restaurant.dislikecolor,
+                      icon: Icon( // <-- Icon
+                        Icons.thumb_down_alt_outlined,
+                        size: 15.0,
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          if(!restaurant.disliked && !restaurant.liked) {
+                            restaurant.rating--;
+                            restaurant.dislikecolor = mainRed;
+                            restaurant.disliked = true;
+                            restaurant.liked = false;
+                          }
+                          else if (restaurant.disliked) {
+                            restaurant.rating++;
+                            restaurant.dislikecolor = secondaryRed;
+                            restaurant.disliked = false;
+                            restaurant.liked = false;
+                          }
+                        });
+                      },
                   ),
                 ],
               )
