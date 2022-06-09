@@ -28,8 +28,8 @@ class Restaurant {
     this.rating = 0,
     this.liked = false,
     this.disliked = false,
-    this.likecolor = mainGray,
-    this.dislikecolor = mainGray,
+    this.likecolor = secondaryRed,
+    this.dislikecolor = secondaryRed,
     });
 }
 
@@ -42,8 +42,8 @@ List<Restaurant> restaurantList = [
     rating: 94,
     liked: false,
     disliked: false,
-    likecolor: mainGray,
-    dislikecolor: mainGray,
+    likecolor: secondaryRed,
+    dislikecolor: secondaryRed,
   ),
   Restaurant(
     name: 'Cafetaria - Restaurante FEUP',
@@ -53,8 +53,8 @@ List<Restaurant> restaurantList = [
     rating: 33,
     liked: false,
     disliked: false,
-    likecolor: mainGray,
-    dislikecolor: mainGray,
+    likecolor: secondaryRed,
+    dislikecolor: secondaryRed,
   ),
   Restaurant(
     name: 'Restaurante do INEGI',
@@ -64,8 +64,8 @@ List<Restaurant> restaurantList = [
     rating: 80,
     liked: false,
     disliked: false,
-    likecolor: mainGray,
-    dislikecolor: mainGray,
+    likecolor: secondaryRed,
+    dislikecolor: secondaryRed,
   ),
   Restaurant(
     name: 'Cantina - Almoço',
@@ -75,8 +75,8 @@ List<Restaurant> restaurantList = [
     rating: 29,
     liked: false,
     disliked: false,
-    likecolor: mainGray,
-    dislikecolor: mainGray,
+    likecolor: secondaryRed,
+    dislikecolor: secondaryRed,
   ),
   Restaurant(
     name: 'Cantina - Jantar',
@@ -86,8 +86,8 @@ List<Restaurant> restaurantList = [
     rating: 42,
     liked: false,
     disliked: false,
-    likecolor: mainGray,
-    dislikecolor: mainGray,
+    likecolor: secondaryRed,
+    dislikecolor: secondaryRed,
   ),
   Restaurant(
     name: 'Bar INESC TEC',
@@ -97,7 +97,7 @@ List<Restaurant> restaurantList = [
     rating: 29,
     liked: false,
     disliked: false,
-    likecolor: mainGray,
-    dislikecolor: mainGray,
+    likecolor: secondaryRed,
+    dislikecolor: secondaryRed,
   )
 ];

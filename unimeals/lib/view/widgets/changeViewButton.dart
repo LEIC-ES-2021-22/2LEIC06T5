@@ -23,7 +23,7 @@ class ButtonList extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                    color: selected == index ? mainRed : mainGray,
+                    color: selected == index ? mainRed : secondaryRed,
               ),
               child: Text(
                 buttons[index],

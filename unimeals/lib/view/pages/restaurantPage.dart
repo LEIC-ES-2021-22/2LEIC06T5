@@ -119,7 +119,7 @@ class _restaurantPageState extends State<restaurantPage> {
                           restaurant.disliked = false;
                         } else if (restaurant.liked && !restaurant.disliked) { //se ja dei like nao quero deixar dar dislike ate que tire o like
                           restaurant.rating--;
-                          restaurant.likecolor = mainGray;
+                          restaurant.likecolor = secondaryRed;
                           restaurant.liked = false;
                           restaurant.disliked = false;
                         }
@@ -144,7 +144,7 @@ class _restaurantPageState extends State<restaurantPage> {
                           }
                           else if (restaurant.disliked) {
                             restaurant.rating++;
-                            restaurant.dislikecolor = mainGray;
+                            restaurant.dislikecolor = secondaryRed;
                             restaurant.disliked = false;
                             restaurant.liked = false;
                           }
