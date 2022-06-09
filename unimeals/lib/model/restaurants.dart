@@ -7,6 +7,7 @@ class Restaurant {
   double lat;
   double long;
   int rating;
+  List<Dish> dishes;
   /*Map <String, List<Dish>> menu*/
 
   Restaurant(
@@ -15,9 +16,28 @@ class Restaurant {
     this.imageUrl = '',
     this.lat = 0.00000000000000000,
     this.long = 0.0000000000000000,
-    this.rating = 0
+    this.rating = 0,
+      this.dishes =  const []
     });
 }
+
+
+
+class Dish {
+  String name;
+  String type;
+  String day;
+
+  Dish(
+      {
+        this.name = '',
+        this.type = '',
+        this.day = ''
+      });
+}
+
+
+
 
 List<Restaurant> restaurantList = [
   Restaurant(
@@ -26,6 +46,20 @@ List<Restaurant> restaurantList = [
     lat: 41.17638279844958,
     long: -8.595226285289137,
     rating: 94,
+      dishes: [
+        Dish(
+            name: 'Comidinha da cafetaria	',
+          type: 'Carne',
+            day: 'segunda-feira'),
+        Dish(
+            name: 'Salmão grelhado com molho de manteiga e batata a murro	',
+            type: 'Peixe',
+            day: 'segunda-feira'),
+        Dish(
+            name: 'Paella vegetariana (pimento, feijão-verde, cenoura e seitan)',
+            type: 'Vegetariano',
+            day: 'segunda-feira'),
+      ]
   ),
   Restaurant(
     name: 'Cafetaria - Restaurante FEUP',
@@ -33,6 +67,20 @@ List<Restaurant> restaurantList = [
     lat: 41.17854340545968,
     long: -8.597440758738738,
     rating: 33,
+      dishes: [
+        Dish(
+            name: 'Comidinha da cafetaria',
+            type: 'Carne',
+            day: 'segunda-feira'),
+        Dish(
+            name: 'Comidinha da cafetaria',
+            type: 'Carne',
+            day: 'segunda-feira'),
+        Dish(
+            name: 'Comidinha da cafetaria',
+            type: 'Vegetariano',
+            day: 'segunda-feira'),
+      ]
   ),
   Restaurant(
     name: 'Restaurante do INEGI',
@@ -40,6 +88,20 @@ List<Restaurant> restaurantList = [
     lat: 41.17934975597032,
     long: -8.594378529295387,
     rating: 80,
+      dishes: [
+        Dish(
+            name: 'Comidinha do inegi',
+            type: 'Carne',
+            day: 'segunda-feira'),
+        Dish(
+            name: 'Comidinha do inegi',
+            type: 'Carne',
+            day: 'segunda-feira'),
+        Dish(
+            name: 'Comidinha do inegi',
+            type: 'Vegetariano',
+            day: 'segunda-feira'),
+      ]
   ),
   Restaurant(
     name: 'Cantina - Almoço',
@@ -47,6 +109,20 @@ List<Restaurant> restaurantList = [
     lat: 41.176299520335974,
     long: -8.59549249453409,
     rating: 29,
+      dishes: [
+        Dish(
+            name: 'Comidinha do Almoço',
+            type: 'Carne',
+            day: 'quarta-feira'),
+        Dish(
+            name: 'Comidinha do Almoço',
+            type: 'Carne',
+            day: 'quarta-feira'),
+        Dish(
+            name: 'Comidinha do Almoço',
+            type: 'Vegetariano',
+            day: 'quarta-feira'),
+      ]
   ),
   Restaurant(
     name: 'Cantina - Jantar',

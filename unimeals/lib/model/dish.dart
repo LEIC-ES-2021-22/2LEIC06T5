@@ -1,38 +1,36 @@
-class Dish{
+
+
+class Dish {
   String name;
-  String typeOfDish;
+  String type;
+  String day;
 
-  Dish(this.name, this.typeOfDish);
-
-  static List<Dish> generateDishesGrill(){
-    return[
-      Dish(
-        'Frango assado com arroz de tomate',
-        'Carne'
-      ), Dish('Lombo de porco assado com maçã',
-          'Carne'),
-      Dish(
-          'Bacalhau fresco à zé do pipo	',
-          'Peixe'
-      ), Dish('Truta com bacon com batata cozida	',
-          'Peixe')
-    ];
-  }
-
-  static List<Dish> generateDishesCantina(){
-    return[
-      Dish(
-          'Novilho assado fatiado com massa espirais tricolor',
-          'Carne'
-      ), Dish('Massa colorida de peru',
-          'Carne'),
-      Dish(
-          'Sardinhas assadas com batata a murro',
-          'Peixe'
-      ), Dish('Lasanha de atum',
-          'Peixe')
-    ];
-  }
-
+  Dish(
+      {
+        this.name = '',
+        this.type = '',
+        this.day = ''
+      });
 }
 
+List<Dish> grillList = [
+  Dish(
+      name: 'Lombo de porco assado com maçã	',
+      type: 'Carne',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Salmão grelhado com molho de manteiga e batata a murro	',
+      type: 'Peixe',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Paella vegetariana (pimento, feijão-verde, cenoura e seitan)',
+      type: 'Vegetariano',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Alheira à Moda de Mirandela',
+      type: 'Carne',
+      day: 'terça-feira'),
+  Dish(name: 'Escalopes de sardinha com arroz de feijão',
+      type: 'Peixe',
+      day: 'terça-feira'),
+];
