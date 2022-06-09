@@ -58,13 +58,6 @@ class navbarDrawer extends StatelessWidget{
                 builder: (context) => MenuComparationPage()));
         break;
       }
-      case 4:{
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => MenuPagehtml()));
-        break;
-      }
       case 5:{
         Navigator.push(
             context,
