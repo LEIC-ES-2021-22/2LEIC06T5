@@ -5,6 +5,7 @@ import 'package:unimeals/view/pages/AboutPage.dart';
 import 'package:unimeals/view/pages/filterPage.dart';
 import 'package:unimeals/view/pages/mainPage.dart';
 import 'package:unimeals/view/pages/menuComparationPage.dart';
+import 'package:unimeals/view/pages/menusPagehtml.dart';
 
 //TODO: Improve design of navbar, add more top padding
 
@@ -58,6 +59,13 @@ class navbarDrawer extends StatelessWidget{
         break;
       }
       case 4:{
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => MenuPagehtml()));
+        break;
+      }
+      case 5:{
         Navigator.push(
             context,
             MaterialPageRoute(

@@ -29,8 +29,14 @@ List<Navbar> navbarList = [
     pageNum: 3
   ),
   Navbar(
+      name: 'All menus',
+      icon: Icons.restaurant_menu,
+      pageNum: 4
+  ),
+  Navbar(
     name: 'Sobre',
     icon: Icons.info_outline,
-    pageNum: 4
+    pageNum: 5
   )
+
 ];
