@@ -1,12 +1,32 @@
+import 'dart:convert';
+
+
 import 'package:flutter/material.dart';
 import 'package:unimeals/controller/restaurantApi.dart';
 import 'package:unimeals/model/newRestaurantsJson.dart';
-import 'package:unimeals/view/pages/restaurantPage.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
+import 'package:http/http.dart' as http;
+
+
+const ementaUrl = 'https://sigarra.up.pt/feup/pt/mob_eme_geral.cantinas';
 
 
 class MenuComparationPage extends StatelessWidget {
   @override
+
+  Future<Map<String, dynamic>> getRestaurantName() async {
+    var response = await http.get(Uri.parse(ementaUrl));
+    if (response.statusCode == 200) {
+      var data = json.decode(response.body);
+        var restaurantName = data[0]["codigo"];
+      return restaurantName;
+    } else {
+      throw Exception('Failed to read $ementaUrl');
+    }
+  }
+
+
+
   Widget build(BuildContext context) {
     return Scaffold(
         drawer: navbarDrawer(),
