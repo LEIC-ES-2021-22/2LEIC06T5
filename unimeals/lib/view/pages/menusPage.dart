@@ -76,13 +76,16 @@ class _MenusPageState extends State<MenusPage> {
                     ),
                   ],
                 ),
+
                 Container(
                   height: 300,
                   child: ListView.builder(
                       itemCount: restaurant.dishes.length,
                       itemBuilder: (context, index){
                         List restaurantDishes = restaurant.dishes;
-                        return ListTile(
+                        return Visibility(
+                          visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                          child: ListTile(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(20),
@@ -103,7 +106,8 @@ class _MenusPageState extends State<MenusPage> {
                             style: TextStyle(
                                 fontSize: 15,
                                 color: mainRed),
-                          ),
+                          )
+                        ),
                         );
                       }),
                 )

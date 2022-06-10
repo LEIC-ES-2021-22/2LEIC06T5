@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unimeals/constants/colors.dart';
 import 'package:unimeals/model/dish.dart';
 import 'package:unimeals/view/widgets/navbarDrawer.dart';
+import 'package:unimeals/model/filters.dart';
 
 class MenuComparationPage extends StatelessWidget {
   @override
@@ -22,7 +23,7 @@ class MenuComparationPage extends StatelessWidget {
                   children: [
                     // Grill Dishes
                     Container(
-                        height: 375,
+                        height: 385,
                         padding: const EdgeInsets.all(15.0),
                         child: Container(
                           child: Column(
@@ -44,7 +45,9 @@ class MenuComparationPage extends StatelessWidget {
                                             shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.circular(20)),
                                             color: clearOrange,
-                                            child: ListTile(
+                                            child: Visibility(
+                                                visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                                                child:ListTile(
                                               title: Text(
                                                   grill.type,
                                                   style: TextStyle(color: mainRed)
@@ -55,7 +58,7 @@ class MenuComparationPage extends StatelessWidget {
                                                     fontSize: 15
                                                 ),),
                                             )
-                                        );
+                                        ),);
                                       })
                               )
                             ],
@@ -64,12 +67,12 @@ class MenuComparationPage extends StatelessWidget {
                     ),
                     // Cafetaria Dishes
                     Container(
-                        height: 375,
+                        height: 400,
                         padding: const EdgeInsets.all(15.0),
                         child: Container(
                           child: Column(
                             children: [
-                              Text('Cafetaria',
+                              Text('Cafetaria - Restaurante FEUP',
                                   style: TextStyle(
                                       fontSize: 30,
                                       color: mainRed
@@ -85,7 +88,10 @@ class MenuComparationPage extends StatelessWidget {
                                           shape: RoundedRectangleBorder(
                                               borderRadius: BorderRadius.circular(20)),
                                           color: clearOrange,
-                                          child: ListTile(
+                                          child: Visibility(
+                                            visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                                            child:
+                                          ListTile(
                                               title: Text(cafetaria.type,
                                                   style: TextStyle(color: mainRed)),
                                               subtitle: Text(cafetaria.name),
@@ -93,9 +99,8 @@ class MenuComparationPage extends StatelessWidget {
                                               style: TextStyle(
                                                   fontSize: 15
                                               ),),
-
                                           ),
-                                        );
+                                        ),);
                                       })
                               )
                             ],
@@ -104,12 +109,12 @@ class MenuComparationPage extends StatelessWidget {
                     ),
                     // Inegi dishes
                     Container(
-                        height: 375,
+                        height: 385,
                         padding: const EdgeInsets.all(15.0),
                         child: Container(
                           child: Column(
                             children: [
-                              Text('Inegi',
+                              Text('Restaurante do INEGI',
                                   style: TextStyle(
                                       fontSize: 30,
                                       color: mainRed
@@ -125,7 +130,10 @@ class MenuComparationPage extends StatelessWidget {
                                           shape: RoundedRectangleBorder(
                                               borderRadius: BorderRadius.circular(20)),
                                           color: clearOrange,
-                                          child: ListTile(
+                                          child: Visibility(
+                                        visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                                        child:
+                                          ListTile(
                                               title: Text(
                                                   inegi.type,
                                                   style: TextStyle(color: mainRed)
@@ -136,62 +144,22 @@ class MenuComparationPage extends StatelessWidget {
                                                   fontSize: 15
                                               ),),
                                           ),
-                                        );
+                                        ),);
                                       })
                               )
                             ],
                           ),
                         )
                     ),
-                    // Inesctec dishes
-                    Container(
-                        height: 375,
-                        padding: const EdgeInsets.all(15.0),
-                        child: Container(
-                          child: Column(
-                            children: [
-                              Text('Inesctec',
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      color: mainRed
-                                  )),
-                              Container(
-                                  child: ListView.builder(
-                                      physics: const NeverScrollableScrollPhysics(),
-                                      shrinkWrap: true,
-                                      itemCount: dishInesctec.length,
-                                      itemBuilder: (context, index) {
-                                        Dish inesctec = dishInesctec[index];
-                                        return Card(
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(20)),
-                                          color: clearOrange,
-                                          child: ListTile(
-                                              title: Text(
-                                                  inesctec.type,
-                                                  style: TextStyle(color: mainRed)
-                                              ),
-                                              subtitle: Text(inesctec.name),
-                                            leading: Text(inesctec.day,
-                                              style: TextStyle(
-                                                  fontSize: 15
-                                              ),),
-                                          ),
-                                        );
-                                      })
-                              )
-                            ],
-                          ),
-                        )
-                    ),
+
                     // Cantina Almoço dishes
                     Container(
-                        height: 375,
+                        height: 385,
                         padding: const EdgeInsets.all(15.0),
                         child: Container(
                           child: Column(
                             children: [
-                              Text('Cantina Almoço',
+                              Text('Cantina - Almoço',
                                   style: TextStyle(
                                       fontSize: 30,
                                       color: mainRed
@@ -207,7 +175,11 @@ class MenuComparationPage extends StatelessWidget {
                                           shape: RoundedRectangleBorder(
                                               borderRadius: BorderRadius.circular(20)),
                                           color: clearOrange,
-                                          child: ListTile(
+                                          child:
+                                              Visibility(
+                                        visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                                        child:
+                                          ListTile(
                                               title: Text(
                                                   cantAlmoco.type,
                                                   style: TextStyle(color: mainRed)
@@ -218,7 +190,7 @@ class MenuComparationPage extends StatelessWidget {
                                                   fontSize: 15
                                               ),),
                                           ),
-                                        );
+                                        ),);
                                       })
                               )
                             ],
@@ -227,12 +199,12 @@ class MenuComparationPage extends StatelessWidget {
                     ),
                     // Cantina Jantar dishes
                     Container(
-                        height: 375,
+                        height: 385,
                         padding: const EdgeInsets.all(15.0),
                         child: Container(
                           child: Column(
                             children: [
-                              Text('Cantina Jantar',
+                              Text('Cantina - Jantar',
                                   style: TextStyle(
                                       fontSize: 30,
                                       color: mainRed
@@ -248,7 +220,9 @@ class MenuComparationPage extends StatelessWidget {
                                           shape: RoundedRectangleBorder(
                                               borderRadius: BorderRadius.circular(20)),
                                           color: clearOrange,
-                                          child: ListTile(
+                                          child: Visibility(visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                                          child:
+                                          ListTile(
                                               title: Text(
                                                   cantJantar.type,
                                                   style: TextStyle(color: mainRed)
@@ -259,13 +233,58 @@ class MenuComparationPage extends StatelessWidget {
                                                   fontSize: 15
                                               ),),
                                           ),
-                                        );
+                                        ),);
                                       })
                               )
                             ],
                           ),
                         )
-                    )
+                    ),
+                    // Inesctec dishes
+                    Container(
+                        height: 385,
+                        padding: const EdgeInsets.all(15.0),
+                        child: Container(
+                          child: Column(
+                            children: [
+                              Text('Bar INESC TEC',
+                                  style: TextStyle(
+                                      fontSize: 30,
+                                      color: mainRed
+                                  )),
+                              Container(
+                                  child: ListView.builder(
+                                      physics: const NeverScrollableScrollPhysics(),
+                                      shrinkWrap: true,
+                                      itemCount: dishInesctec.length,
+                                      itemBuilder: (context, index) {
+                                        Dish inesctec = dishInesctec[index];
+                                        return Card(
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(20)),
+                                          color: clearOrange,
+                                          child:
+                                          Visibility(
+                                            visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                                            child:
+                                            ListTile(
+                                              title: Text(
+                                                  inesctec.type,
+                                                  style: TextStyle(color: mainRed)
+                                              ),
+                                              subtitle: Text(inesctec.name),
+                                              leading: Text(inesctec.day,
+                                                style: TextStyle(
+                                                    fontSize: 15
+                                                ),),
+                                            ),
+                                          ),);
+                                      })
+                              )
+                            ],
+                          ),
+                        )
+                    ),
                   ],
                 )
             )
