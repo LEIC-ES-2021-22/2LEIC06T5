@@ -13,24 +13,99 @@ class Dish {
       });
 }
 
-List<Dish> grillList = [
+
+List<Dish> dishGrill = [
   Dish(
-      name: 'Lombo de porco assado com maçã	',
+      name: 'Comidinha da Anete Grill',
       type: 'Carne',
       day: 'segunda-feira'),
   Dish(
-      name: 'Salmão grelhado com molho de manteiga e batata a murro	',
+      name: 'Comidinha ddo Grill',
       type: 'Peixe',
       day: 'segunda-feira'),
   Dish(
-      name: 'Paella vegetariana (pimento, feijão-verde, cenoura e seitan)',
+      name: 'Comidinha ddo Grill',
       type: 'Vegetariano',
       day: 'segunda-feira'),
   Dish(
-      name: 'Alheira à Moda de Mirandela',
+      name: 'Weeeeeee',
+      type: 'Dieta',
+      day: 'segunda-feira'),
+];
+
+List<Dish> dishCafetaria = [
+  Dish(
+      name: 'Comidinha da cafetaria	',
       type: 'Carne',
-      day: 'terça-feira'),
-  Dish(name: 'Escalopes de sardinha com arroz de feijão',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha da cafetaria',
       type: 'Peixe',
-      day: 'terça-feira'),
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha da cafetaria',
+      type: 'Vegetariano',
+      day: 'segunda-feira'),
+];
+
+List<Dish> dishInegi = [
+  Dish(
+      name: 'Comidinha do Inegi',
+      type: 'Carne',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha do Inegi',
+      type: 'Peixe',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha do Inegi',
+      type: 'Vegetariano',
+      day: 'segunda-feira'),
+];
+
+
+
+List<Dish> dishInesctec = [
+  Dish(
+      name: 'Comidinha do Inesc	',
+      type: 'Carne',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha do Inesc	',
+      type: 'Peixe',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha do Inesc',
+      type: 'Vegetariano',
+      day: 'segunda-feira'),
+];
+
+List<Dish> dishCantinaAlmoco = [
+  Dish(
+      name: 'Comidinha da Cantina	Almoço',
+      type: 'Carne',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha da Cantina Almoço',
+      type: 'Peixe',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha da Cantina Almoço',
+      type: 'Vegetariano',
+      day: 'segunda-feira'),
+];
+
+List<Dish> dishCantinaJantar = [
+  Dish(
+      name: 'Comidinha da Cantina	Jantar',
+      type: 'Carne',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha da Cantina Jantar',
+      type: 'Peixe',
+      day: 'segunda-feira'),
+  Dish(
+      name: 'Comidinha da Cantina Jantar',
+      type: 'Vegetariano',
+      day: 'segunda-feira'),
 ];

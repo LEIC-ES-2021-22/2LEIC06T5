@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unimeals/model/dish.dart';
 
 class Restaurant {
   /*int id;*/
@@ -7,7 +8,7 @@ class Restaurant {
   double lat;
   double long;
   int rating;
-  List<Dish> dishes;
+  List dishes;
   /*Map <String, List<Dish>> menu*/
 
   Restaurant(
@@ -46,20 +47,7 @@ List<Restaurant> restaurantList = [
     lat: 41.17638279844958,
     long: -8.595226285289137,
     rating: 94,
-      dishes: [
-        Dish(
-            name: 'Comidinha da cafetaria	',
-          type: 'Carne',
-            day: 'segunda-feira'),
-        Dish(
-            name: 'Salmão grelhado com molho de manteiga e batata a murro	',
-            type: 'Peixe',
-            day: 'segunda-feira'),
-        Dish(
-            name: 'Paella vegetariana (pimento, feijão-verde, cenoura e seitan)',
-            type: 'Vegetariano',
-            day: 'segunda-feira'),
-      ]
+      dishes: dishGrill
   ),
   Restaurant(
     name: 'Cafetaria - Restaurante FEUP',
@@ -67,20 +55,7 @@ List<Restaurant> restaurantList = [
     lat: 41.17854340545968,
     long: -8.597440758738738,
     rating: 33,
-      dishes: [
-        Dish(
-            name: 'Comidinha da cafetaria',
-            type: 'Carne',
-            day: 'segunda-feira'),
-        Dish(
-            name: 'Comidinha da cafetaria',
-            type: 'Carne',
-            day: 'segunda-feira'),
-        Dish(
-            name: 'Comidinha da cafetaria',
-            type: 'Vegetariano',
-            day: 'segunda-feira'),
-      ]
+      dishes: dishCafetaria
   ),
   Restaurant(
     name: 'Restaurante do INEGI',
@@ -88,20 +63,7 @@ List<Restaurant> restaurantList = [
     lat: 41.17934975597032,
     long: -8.594378529295387,
     rating: 80,
-      dishes: [
-        Dish(
-            name: 'Comidinha do inegi',
-            type: 'Carne',
-            day: 'segunda-feira'),
-        Dish(
-            name: 'Comidinha do inegi',
-            type: 'Carne',
-            day: 'segunda-feira'),
-        Dish(
-            name: 'Comidinha do inegi',
-            type: 'Vegetariano',
-            day: 'segunda-feira'),
-      ]
+      dishes: dishInegi
   ),
   Restaurant(
     name: 'Cantina - Almoço',
@@ -109,20 +71,7 @@ List<Restaurant> restaurantList = [
     lat: 41.176299520335974,
     long: -8.59549249453409,
     rating: 29,
-      dishes: [
-        Dish(
-            name: 'Comidinha do Almoço',
-            type: 'Carne',
-            day: 'quarta-feira'),
-        Dish(
-            name: 'Comidinha do Almoço',
-            type: 'Carne',
-            day: 'quarta-feira'),
-        Dish(
-            name: 'Comidinha do Almoço',
-            type: 'Vegetariano',
-            day: 'quarta-feira'),
-      ]
+      dishes: dishCantinaAlmoco
   ),
   Restaurant(
     name: 'Cantina - Jantar',
@@ -130,6 +79,7 @@ List<Restaurant> restaurantList = [
     lat: 41.176299520335974,
     long: -8.59549249453409,
     rating: 42,
+      dishes: dishCantinaJantar
   ),
   Restaurant(
     name: 'Bar INESC TEC',
@@ -137,5 +87,6 @@ List<Restaurant> restaurantList = [
     lat: 41.1793925865339,
     long: -8.59540155399247,
     rating: 29,
+      dishes: dishInesctec
   )
 ];
