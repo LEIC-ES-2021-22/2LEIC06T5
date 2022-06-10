@@ -5,6 +5,7 @@ import 'package:unimeals/view/pages/AboutPage.dart';
 import 'package:unimeals/view/pages/filterPage.dart';
 import 'package:unimeals/view/pages/mainPage.dart';
 import 'package:unimeals/view/pages/menuComparationPage.dart';
+import 'package:unimeals/view/pages/menusPagehtml.dart';
 
 //TODO: Improve design of navbar, add more top padding
 

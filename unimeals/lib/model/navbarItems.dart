@@ -24,7 +24,7 @@ List<Navbar> navbarList = [
     pageNum: 2
   ),
   Navbar(
-    name: 'Comparação de Menus',
+    name: 'Todas as Ementas',
     icon: Icons.restaurant_menu,
     pageNum: 3
   ),
@@ -33,4 +33,5 @@ List<Navbar> navbarList = [
     icon: Icons.info_outline,
     pageNum: 4
   )
+
 ];

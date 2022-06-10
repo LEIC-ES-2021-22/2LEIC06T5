@@ -7,176 +7,115 @@ import 'package:unimeals/view/widgets/navbarDrawer.dart';
 
 
 
-class menusPage extends StatefulWidget {
+class MenusPage extends StatefulWidget {
   final Restaurant restaurant;
-  menusPage(this.restaurant);
+  MenusPage(this.restaurant);
 
   @override
-  State<menusPage> createState() => _menusPageState(restaurant);
+  State<MenusPage> createState() => _MenusPageState(restaurant);
 }
 
-class _menusPageState extends State<menusPage> {
+class _MenusPageState extends State<MenusPage> {
   var selected = 1;
   final Restaurant restaurant;
-  _menusPageState(this.restaurant);
+  _MenusPageState(this.restaurant);
+  var dishLength = 3;
+
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         drawer: navbarDrawer(),
-      appBar: AppBar(
-        title: Text('UniMeals'),
-        backgroundColor: mainRed,
-        centerTitle: true,
-        shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container( //apply margin and padding using Container Widget.
-                padding: EdgeInsets.all(30),
-                child: Text(
-                  restaurant.name,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    decoration: TextDecoration.underline,
-                    fontSize: 30,
-                    color: mainRed,  //
-                  ),
-                ),
-              ),
-              ButtonList(selected,
-                      (int index) {
-                    setState(() {
-                      if(index == 0) {Navigator.pop(context);}
-                      selected = index;
-                    });
-                  }
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text('Segunda feira',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
-                          color: mainRed),
+        appBar: AppBar(
+          title: Text('UniMeals'),
+          automaticallyImplyLeading: false,
+          backgroundColor: mainRed,
+          centerTitle: true,
+          shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
+        ),
+        body: Container(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container( //apply margin and padding using Container Widget.
+                  padding: EdgeInsets.all(30),
+                  child: Text(
+                    restaurant.name,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                      fontSize: 30,
+                      color: mainRed,  //
                     ),
                   ),
-                ],
-              ),
-              Visibility(
-                visible:Filters().switchcarne,
-                child: ListTile(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                        bottomRight: Radius.circular(20),
-                        bottomLeft: Radius.circular(20))),
-                tileColor: secondaryOrange,
-                title: const Text(
-                  'Carne',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                      fontSize: 20,
-                      color: mainRed),
                 ),
-                subtitle: const Text(
-                  'Bife de vaca com cogumelos e puré de batata',
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: mainRed),
+                ButtonList(selected,
+                        (int index) {
+                      setState(() {
+                        if(index == 0) {Navigator.pop(context);}
+                        selected = index;
+                      });
+                    }
                 ),
-              )),
-               Visibility(
-                 visible: Filters().switchpeixe,
-                 child: ListTile(
-                 shape: RoundedRectangleBorder(
-                     borderRadius: BorderRadius.only(
-                         topLeft: Radius.circular(20),
-                         topRight: Radius.circular(20),
-                         bottomRight: Radius.circular(20),
-                         bottomLeft: Radius.circular(20))),
-                 tileColor: secondaryOrange,
-                 title: const Text(
-                   'Peixe',
-                   style: TextStyle(
-                       fontWeight: FontWeight.bold,
-                       decoration: TextDecoration.underline,
-                       fontSize: 20,
-                       color: mainRed),
-                 ),
-                 subtitle: const Text(
-                   'Pescada grelhada com molho de manteiga',
-                   style: TextStyle(
-                       fontSize: 15,
-                       color: mainRed),
-                 ),
-               ),),
-               Visibility(
-                 visible: Filters().switchdieta,
-                 child: ListTile(
-                 shape: RoundedRectangleBorder(
-                     borderRadius: BorderRadius.only(
-                         topLeft: Radius.circular(20),
-                         topRight: Radius.circular(20),
-                         bottomRight: Radius.circular(20),
-                         bottomLeft: Radius.circular(20))),
-                 tileColor: secondaryOrange,
-                 title: const Text(
-                   'Dieta',
-                   style: TextStyle(
-                       fontWeight: FontWeight.bold,
-                       decoration: TextDecoration.underline,
-                       fontSize: 20,
-                       color: mainRed),
-                 ),
-                 subtitle: const Text(
-                   'Frango grelhado com esparguete',
-                   style: TextStyle(
-                       fontSize: 15,
-                       color: mainRed),
-                 ),
-               )),
-              Visibility(
-                visible:Filters().switchvegetariano,
-                  child: ListTile(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                        bottomRight: Radius.circular(20),
-                        bottomLeft: Radius.circular(20))),
-                tileColor: secondaryOrange,
-                title: const Text(
-                  'Vegetariano',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                      fontSize: 20,
-                      color: mainRed),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text('Segunda feira',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                            color: mainRed),
+                      ),
+                    ),
+                  ],
                 ),
-                subtitle: const Text(
-                  'Muqueca de tofu',
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: mainRed),
-                ),
-              )),
-            ],
+
+                Container(
+                  height: 300,
+                  child: ListView.builder(
+                      itemCount: restaurant.dishes.length,
+                      itemBuilder: (context, index){
+                        List restaurantDishes = restaurant.dishes;
+                        return Visibility(
+                          visible: (index == 0)? Filters().switchcarne : (index==1)? Filters().switchpeixe : (index==2)? Filters().switchdieta : Filters().switchvegetariano,
+                          child: ListTile(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
+                                  bottomRight: Radius.circular(20),
+                                  bottomLeft: Radius.circular(20))),
+                          tileColor: secondaryOrange,
+                          title: Text(
+                            restaurantDishes[index].type,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                decoration: TextDecoration.underline,
+                                fontSize: 20,
+                                color: mainRed),
+                          ),
+                          subtitle: Text(
+                            restaurantDishes[index].name,
+                            style: TextStyle(
+                                fontSize: 15,
+                                color: mainRed),
+                          )
+                        ),
+                        );
+                      }),
+                )
+
+              ],
+            ),
           ),
-        ),
-      )
+        )
     );
   }
 }
