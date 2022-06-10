@@ -50,7 +50,7 @@ class _restaurantPageState extends State<restaurantPage> {
               ButtonList(selected,
                       (int index) {
                     setState(() {
-                      if(index == 1) {Navigator.push(context, PageRouteBuilder(pageBuilder: (_,__,___) => menusPage(restaurant))); index--;}
+                      if(index == 1) {Navigator.push(context, PageRouteBuilder(pageBuilder: (_,__,___) => MenusPage(restaurant))); index--;}
                       selected = index;
                     });
                   }
