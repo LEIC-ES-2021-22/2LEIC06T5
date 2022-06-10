@@ -11,7 +11,7 @@ class MainPage extends StatelessWidget {
       drawer: navbarDrawer(),
         appBar: AppBar(
           title: Text('UniMeals'),
-          backgroundColor: Color(0xFF8C2D19),
+          backgroundColor: mainRed,
           centerTitle: true,
           shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))),
