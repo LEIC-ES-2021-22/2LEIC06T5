@@ -67,7 +67,7 @@ class MenuComparationPage extends StatelessWidget {
                     ),
                     // Cafetaria Dishes
                     Container(
-                        height: 400,
+                        height: 500,
                         padding: const EdgeInsets.all(15.0),
                         child: Container(
                           child: Column(

@@ -22,31 +22,13 @@ class Restaurant {
     this.lat = 0.00000000000000000,
     this.long = 0.0000000000000000,
     this.rating = 0,
-    this.dishes =  const []
+    this.dishes =  const [],
     this.liked = false,
     this.disliked = false,
     this.likecolor = secondaryRed,
     this.dislikecolor = secondaryRed,
     });
 }
-
-
-
-class Dish {
-  String name;
-  String type;
-  String day;
-
-  Dish(
-      {
-        this.name = '',
-        this.type = '',
-        this.day = ''
-      });
-}
-
-
-
 
 List<Restaurant> restaurantList = [
   Restaurant(
@@ -55,7 +37,7 @@ List<Restaurant> restaurantList = [
     lat: 41.17638279844958,
     long: -8.595226285289137,
     rating: 94,
-    dishes: dishGrill
+    dishes: dishGrill,
     liked: false,
     disliked: false,
     likecolor: secondaryRed,
@@ -67,7 +49,7 @@ List<Restaurant> restaurantList = [
     lat: 41.17854340545968,
     long: -8.597440758738738,
     rating: 33,
-    dishes: dishCafetaria
+    dishes: dishCafetaria,
     liked: false,
     disliked: false,
     likecolor: secondaryRed,
@@ -79,7 +61,7 @@ List<Restaurant> restaurantList = [
     lat: 41.17934975597032,
     long: -8.594378529295387,
     rating: 80,
-    dishes: dishInegi
+    dishes: dishInegi,
     liked: false,
     disliked: false,
     likecolor: secondaryRed,
@@ -92,7 +74,7 @@ List<Restaurant> restaurantList = [
     lat: 41.176299520335974,
     long: -8.59549249453409,
     rating: 29,
-    dishes: dishCantinaAlmoco
+    dishes: dishCantinaAlmoco,
     liked: false,
     disliked: false,
     likecolor: secondaryRed,
@@ -104,7 +86,7 @@ List<Restaurant> restaurantList = [
     lat: 41.176299520335974,
     long: -8.59549249453409,
     rating: 42,
-    dishes: dishCantinaJantar
+    dishes: dishCantinaJantar,
     liked: false,
     disliked: false,
     likecolor: secondaryRed,
@@ -116,7 +98,7 @@ List<Restaurant> restaurantList = [
     lat: 41.1793925865339,
     long: -8.59540155399247,
     rating: 29,
-    dishes: dishInesctec
+    dishes: dishInesctec,
     liked: false,
     disliked: false,
     likecolor: secondaryRed,

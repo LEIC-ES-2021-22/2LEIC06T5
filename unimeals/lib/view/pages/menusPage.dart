@@ -29,7 +29,6 @@ class _MenusPageState extends State<MenusPage> {
         drawer: navbarDrawer(),
         appBar: AppBar(
           title: Text('UniMeals'),
-          automaticallyImplyLeading: false,
           backgroundColor: mainRed,
           centerTitle: true,
           shape: ContinuousRectangleBorder(borderRadius: BorderRadius.only(
