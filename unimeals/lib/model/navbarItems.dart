@@ -24,19 +24,14 @@ List<Navbar> navbarList = [
     pageNum: 2
   ),
   Navbar(
-    name: 'Comparação de Menus',
+    name: 'Todas as Ementas',
     icon: Icons.restaurant_menu,
     pageNum: 3
   ),
   Navbar(
-      name: 'All menus',
-      icon: Icons.restaurant_menu,
-      pageNum: 4
-  ),
-  Navbar(
     name: 'Sobre',
     icon: Icons.info_outline,
-    pageNum: 5
+    pageNum: 4
   )
 
 ];
